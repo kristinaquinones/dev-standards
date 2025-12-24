@@ -3,12 +3,23 @@
 ## Standard build steps
 
 ```bash
-npm install              # Install dependencies
-npm run lint            # ESLint + Prettier
-npm run typecheck       # TypeScript checks
-npm run test            # Unit + integration tests
-npm run build           # Production build
-npm run build:verify    # Verify build output (optional smoke tests)
+# Install dependencies
+<install-command>           # e.g., npm install, pip install -r requirements.txt, go mod download
+
+# Lint code
+<lint-command>              # e.g., npm run lint, pylint src/, cargo clippy
+
+# Type checking (if applicable)
+<typecheck-command>         # e.g., npm run typecheck, mypy src/, tsc --noEmit
+
+# Run tests
+<test-command>              # e.g., npm test, pytest, go test ./..., cargo test
+
+# Build production artifacts
+<build-command>             # e.g., npm run build, python setup.py build, go build, cargo build --release
+
+# Verify build (optional)
+<verify-command>            # e.g., smoke tests, build artifact validation
 ```
 
 ## GitHub Actions Template
@@ -21,30 +32,29 @@ on: [push, pull_request]
 jobs:
   build:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node-version: [18.x, 20.x]
 
     steps:
       - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-        with:
-          node-version: ${{ matrix.node-version }}
+      
+      # Setup environment (adapt to your language/stack)
+      # - uses: actions/setup-node@v3    # for Node.js
+      # - uses: actions/setup-python@v3  # for Python
+      # - uses: actions/setup-go@v3      # for Go
 
       - name: Install dependencies
-        run: npm install
+        run: <install-command>
 
       - name: Lint
-        run: npm run lint
+        run: <lint-command>
 
-      - name: TypeScript
-        run: npm run typecheck
+      - name: Type check
+        run: <typecheck-command>
 
       - name: Tests
-        run: npm test -- --coverage
+        run: <test-command> --coverage
 
       - name: Build
-        run: npm run build
+        run: <build-command>
 ```
 
 ## Deployment strategy

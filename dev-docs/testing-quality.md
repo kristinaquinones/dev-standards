@@ -8,19 +8,19 @@
    - Test individual functions, modules, components
    - Isolated from external dependencies (mock APIs, databases)
    - Fast to run (<5ms per test)
-   - Framework: Jest, Vitest, or equivalent
+   - Use appropriate testing framework for your language/ecosystem
 
 2. **Integration Tests** (20–30% of test suite)
    - Test how modules work together
    - Use realistic test fixtures
    - May hit real databases or file systems
-   - Framework: Jest + Testing Library (for UI), or Supertest (for APIs)
+   - Use appropriate testing framework for your language/ecosystem
 
 3. **E2E Tests** (5–10% of test suite)
    - Test complete user workflows
-   - Run in real browser/environment
+   - Run in real browser/environment (for web apps) or production-like environments
    - Slow but high confidence
-   - Framework: Playwright, Cypress, or equivalent
+   - Use appropriate E2E testing tools for your platform
 
 ## Coverage targets
 
@@ -30,7 +30,9 @@
 
 ## Testing best practices
 
-```typescript
+### General Principles
+
+```
 // ✅ Good: Descriptive test names, realistic fixtures, clear assertions
 describe('parseMarkdown', () => {
   it('should extract YAML frontmatter and markdown body', () => {
@@ -58,10 +60,19 @@ describe('parsing', () => {
 
 ## Running tests
 
+Adapt these commands to your project's testing setup:
+
 ```bash
-npm test                      # Run all tests once
-npm test -- --watch          # Watch mode (re-run on file change)
-npm test -- --coverage       # Generate coverage report
-npm run check                # Lint + typecheck + tests (full CI suite)
+# Run all tests once
+<test-command>                  # e.g., npm test, pytest, go test, cargo test
+
+# Watch mode (re-run on file change)
+<test-command> --watch          # e.g., npm test -- --watch, pytest-watch
+
+# Generate coverage report
+<test-command> --coverage       # e.g., npm test -- --coverage, pytest --cov
+
+# Full CI suite (lint + typecheck + tests)
+<check-command>                 # e.g., npm run check, make test, cargo test
 ```
 

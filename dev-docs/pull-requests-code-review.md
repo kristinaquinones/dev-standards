@@ -9,11 +9,11 @@
    - Link to related issue
 
 2. **Testing Checklist**
-   - `npm run lint` ✅
-   - `npm run typecheck` ✅
-   - `npm test` ✅
-   - `npm run build` ✅
-   - Manual testing in browser/CLI
+   - Linting passes ✅
+   - Type checking passes (if applicable) ✅
+   - All tests pass ✅
+   - Build succeeds ✅
+   - Manual testing completed (if applicable)
 
 3. **Documentation Updates**
    - Progress log created: `docs/progress/YYYY_MM_DD.md`
