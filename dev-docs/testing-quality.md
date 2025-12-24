@@ -32,7 +32,15 @@
 
 ### General Principles
 
-```
+Write tests that are:
+- **Descriptive**: Test names clearly state what they're testing
+- **Realistic**: Use realistic test fixtures and data
+- **Clear**: Assertions are explicit and meaningful
+- **Isolated**: Tests don't depend on each other
+
+### JavaScript/TypeScript Example
+
+```javascript
 // ✅ Good: Descriptive test names, realistic fixtures, clear assertions
 describe('parseMarkdown', () => {
   it('should extract YAML frontmatter and markdown body', () => {
@@ -56,6 +64,27 @@ describe('parsing', () => {
     expect(parseMarkdown('---\ntitle: Test\n---\n# Content')).toBeTruthy();
   });
 });
+```
+
+### Python Example
+
+```python
+# ✅ Good: Descriptive test names, realistic fixtures, clear assertions
+def test_parse_markdown_extracts_frontmatter_and_body():
+    input_text = '---\ntitle: Test\n---\n# Content'
+    result = parse_markdown(input_text)
+    assert result['frontmatter']['title'] == 'Test'
+    assert '# Content' in result['body']
+
+def test_parse_markdown_handles_missing_frontmatter():
+    input_text = '# Content only'
+    result = parse_markdown(input_text)
+    assert result['frontmatter'] == {}
+    assert result['body'] == '# Content only'
+
+# ❌ Bad: Unclear test name, no fixtures, brittle assertions
+def test_parsing():
+    assert parse_markdown('---\ntitle: Test\n---\n# Content')
 ```
 
 ## Running tests

@@ -25,7 +25,7 @@ Template:
 <install-command>
 
 # Copy environment template
-cp .env.example .env.local
+<copy-env-command>         # e.g., cp .env.example .env.local, cp config.example.yml config.yml
 
 # Start development environment
 <dev-command>
