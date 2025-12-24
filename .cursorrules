@@ -1,0 +1,106 @@
+# Documentation Repository Standards
+
+## Repository Context
+This is a documentation-only repository containing project-agnostic standards across multiple disciplines. All content is Markdown files organized in discipline-specific directories (`dev-docs/`, `product-docs/`, `gtm-mktg-docs/`, `design-docs/`, `measurement-docs/`).
+
+## Documentation Standards
+
+### Markdown Formatting
+- Use standard Markdown syntax
+- Headers: # for main title (matches filename), ## for sections, ### for subsections, #### sparingly for nested
+- Code blocks: Always include language tags (```typescript, ```bash, ```markdown, etc.)
+- Inline code: Use backticks for `code` references
+- Lists: Use `-` for unordered, numbered (`1.`, `2.`) for ordered, indent nested lists with 2 spaces
+- Checklists: Use `- [ ]` for checkboxes
+- Collapsible sections: Use GitHub `<details>` and `<summary>` tags for long lists (5+ items) in README or index files to improve readability
+- Links: Use relative paths for internal links (e.g., `[text](dev-docs/file.md)`), anchors for sections (`[text](dev-docs/file.md#section-name)`)
+- External links: Use descriptive text, not "click here"
+- Tables: Use pipe syntax with alignment (`| Left | Center | Right |`)
+- No trailing whitespace
+
+### File Organization
+- Root level: README.md, CHANGELOG.md, LICENSE, .cursorrules, claude.md, AGENTS.md
+- Standards files: Organized by discipline in `*-docs/` directories (kebab-case filenames matching main heading)
+- Each file: Start with `#` title matching filename, use `##` for major sections, `###` for subsections
+- Directory structure:
+  ```
+  dev-standards/
+  ├── README.md
+  ├── CHANGELOG.md
+  ├── LICENSE
+  ├── .cursorrules, claude.md, AGENTS.md (trio files)
+  ├── dev-docs/ (development standards)
+  ├── product-docs/ (product management standards)
+  ├── gtm-mktg-docs/ (GTM & marketing standards)
+  ├── design-docs/ (design standards)
+  └── measurement-docs/ (measurement & analytics standards)
+  ```
+
+### Content Standards
+- Clarity > Cleverness: Write for readability, assume reader knows software development but may be new to these standards
+- DRY: Link to related docs instead of duplicating content; if content appears in multiple places, consider consolidating
+- Consistency: Follow existing patterns, use consistent terminology ("development standards" not "dev standards")
+- Avoid "business" terminology: Use "product goals", "objectives", "outcomes", "strategic goals" instead to be inclusive of indie makers, creators, and developers who may not identify as "businesses"
+- SMART goals framework: The primary goal-setting framework recommended throughout these standards (Specific, Measurable, Achievable, Relevant, Time-bound)
+- Incrementality in experiments: Well-designed experiments that measure incrementality are the only way to understand the actual impact of a change or intervention; observed data over time alone is insufficient
+- Keep docs in sync: Update related files when making changes (especially index and trio files)
+- Cross-reference: Link related sections using relative paths, update links when files move/rename
+- Tone: Professional but approachable
+
+### Style Guide
+- Headings and labels: Use sentence casing (capitalize first word and proper nouns only)
+- Em dashes: Minimal to no use of em dashes; prefer commas, periods, or parentheses instead
+
+### Git Workflow
+- Commit format: Conventional Commits (`docs:`, `fix:`, `feat:`, `refactor:`, `chore:`)
+- Examples: `docs: add new section on code organization`, `fix: correct typo in security.md`
+- Branch strategy: `feature/description`, `fix/description`, `chore/description` from main
+- PR scope: One topic per PR, keep changes focused, reviewers should understand in 15 minutes
+
+### Link Maintenance
+- Internal links: Always use relative paths `[text](dev-docs/file.md)`, anchors for sections `[text](dev-docs/file.md#section-name)`
+- Update links: When files are moved/renamed, update all affected files
+- Verify links: Check all links work before committing (internal and external)
+- Descriptive text: Use meaningful link text, not "click here"
+
+### Working with AI Assistants
+- AI should: Maintain existing formatting patterns, use relative paths for links, follow file naming conventions, update related files when making changes, verify links before suggesting changes
+- AI should NOT: Create new files without updating index, break existing links, change formatting style arbitrarily, duplicate content that should be linked instead
+- When helping: Be specific about which file(s) to modify, reference existing patterns, ask for link verification, request consistency checks
+
+### Documentation Review Checklist
+Before submitting PR:
+- [ ] Spelling and grammar checked
+- [ ] All links verified (internal and external, anchors work)
+- [ ] Formatting consistent with existing files
+- [ ] File structure follows conventions (filename matches heading, proper header hierarchy)
+- [ ] Related files updated (index if adding/removing files, trio files if standards change)
+- [ ] Commit message follows Conventional Commits format
+- [ ] PR description is clear and complete
+- [ ] Content follows DRY (no duplication, links instead)
+- [ ] Cross-references reviewed: All related topics linked, no missed connections
+- [ ] DRY conflicts checked: No duplicate content, conflicts resolved, consolidation considered
+- [ ] Code blocks have language tags
+- [ ] Tables are readable and aligned
+
+### Keeping Files in Sync
+- The Trio: `.cursorrules` (brief AI rules), `claude.md` (detailed guidelines), `AGENTS.md` (contributing process)
+- When updating standards: Update relevant file in `dev-docs/`, update `DEVELOPMENT-STANDARDS.md` index if structure changes, update trio files if standards change, keep all three consistent
+- Sync checklist: `.cursorrules` updated with key rule, `claude.md` updated with detailed explanation, `AGENTS.md` updated with process/checklist
+
+### Version History
+- Version history is maintained ONLY in the root README.md file
+- Do NOT add version history sections to individual documentation files or section README files
+- All changes should be tracked in the root README.md version history table with contributor GitHub username (@username format)
+
+### Cross-Reference & DRY Review
+- Review all docs for cross-referencing opportunities: Link related topics across all standards directories
+- Check for DRY conflicts: Identify duplicate content, resolve conflicts, consider consolidation
+- Cross-discipline links: Link between dev-docs, product-docs, gtm-mktg-docs, design-docs, measurement-docs where relevant
+- Before committing: Thoroughly review structure for missed cross-references and DRY violations
+
+### Common Tasks
+- Adding new standard: Create file in appropriate `*-docs/` directory, follow existing structure, add to index, link from related standards, verify links, check for cross-references
+- Fixing broken link: Find broken link, determine correct path, update link, verify it works, check for similar issues
+- Updating related content: Identify all affected files across all standards directories, update consistently, verify links, update index if needed, update trio files if standards change, review for cross-references
+- Reorganizing: Plan new structure, move/rename files, update all internal links, update index, verify links, update trio files if needed, check for cross-reference opportunities
