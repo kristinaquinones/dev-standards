@@ -16,10 +16,10 @@
 
 **Examples:**
 ```bash
-git commit -m "feat(search): add FlexSearch indexing for 1000+ documents"
+git commit -m "feat(search): add full-text search indexing for 1000+ documents"
 git commit -m "fix(parser): handle missing YAML frontmatter gracefully"
-git commit -m "docs: update DEVELOPMENT-STANDARDS with testing guidelines"
-git commit -m "chore(deps): upgrade Next.js to 14.2.0"
+git commit -m "docs: update development standards with testing guidelines"
+git commit -m "chore(deps): upgrade framework to latest stable version"
 ```
 
 ## Branch strategy

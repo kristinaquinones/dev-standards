@@ -17,9 +17,9 @@
 
 Before merging:
 - [ ] No new large dependencies added without justification
-- [ ] Images are optimized (Next.js Image component, WebP, responsive sizes)
+- [ ] Images are optimized (modern formats, responsive sizes, lazy loading)
 - [ ] No N+1 queries (batch database operations)
 - [ ] Expensive operations are cached or memoized
-- [ ] Code splitting is in place (lazy load heavy routes)
+- [ ] Code splitting is in place (lazy load heavy components/routes)
 - [ ] Bundle size is monitored and trending down
 

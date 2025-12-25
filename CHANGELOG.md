@@ -5,6 +5,21 @@ All notable changes to this repository will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased]
+
+### Changed
+- Made `dev-docs/` standards project-agnostic by removing framework-specific references (Next.js, React, npm, etc.)
+- Updated `code-organization.md` to use generic directory structure instead of Next.js-specific structure
+- Updated `coding-style-standards.md` to include examples for TypeScript/JavaScript, Python, and Go instead of only TypeScript
+- Updated `testing-quality.md` to use generic test framework references instead of Jest/Vitest/Playwright/Cypress
+- Updated `cicd-build-pipeline.md` to use placeholder commands instead of npm-specific commands
+- Updated `git-version-control.md` to use generic framework examples instead of Next.js
+- Updated `pull-requests-code-review.md` to use generic test commands instead of npm-specific
+- Updated `onboarding-knowledge-transfer.md` to provide generic onboarding guidance with placeholders
+- Updated `architecture-decisions.md` to use generic static typing example instead of TypeScript-specific
+- Updated `performance-scalability.md` to use generic image optimization guidance instead of Next.js Image component
+- Updated `security.md` to use generic dependency management commands instead of npm-specific
+
 ## [1.0.0] - 2025-12-23
 
 
