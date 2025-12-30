@@ -183,7 +183,7 @@ dev-standards/
 
 ## Contributing
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for the complete contributing process, guidelines, and frequently asked questions.
+See [CONTRIBUTING.md](CONTRIBUTING.md) for the complete contributing process, guidelines, and answers to anticipated FAQs.
 
 ## Version history
 
