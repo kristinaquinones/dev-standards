@@ -1,10 +1,12 @@
 # dev-standards
 
-Waddup fam, I'm @kristinaquinones, and I created this repo to hold general, project-agnostic development standards and other reusable workflow/project components. 
+*This repo holds general, project-agnostic development standards and other reusable workflow/project components that I've found useful. Hopefully it'll prove helpful for you, too.*
+
+✌️ @kristinaquinones
 
 ## Overview
 
-This repository serves as a centralized collection of standards, best practices, and reusable project components that can be applied across multiple software projects and organizations. The standards are designed to be universal and adaptable, providing a solid foundation for establishing consistent practices across teams and disciplines.
+This repository is a centralized collection of standards, best practices, and reusable project components that can be applied across multiple software projects and organizations. The standards are designed to be universal and adaptable, providing a solid foundation for establishing consistent practices across teams and disciplines.
 
 ## Usage
 
