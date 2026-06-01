@@ -82,10 +82,12 @@ Go-to-market and marketing standards and best practices:
   <details>
   <summary>View all topics</summary>
 
+  - Marketing Spec (Problem & Opportunity Spec)
+  - Marketing PRD
   - Positioning & Messaging
   - Channel Strategy
   - GTM Launch Planning
-  - Templates (Positioning, Campaign Brief, Messaging Hierarchy, Content Brief)
+  - Templates (Marketing Spec, Marketing PRD, Positioning, Campaign Brief, Messaging Hierarchy, Content Brief)
   
   </details>
 
@@ -170,7 +172,20 @@ dev-standards/
 │       └── user-story-template.md
 │
 ├── gtm-mktg-docs/              # GTM & Marketing standards
-│   └── README.md                # GTM & Marketing standards index
+│   ├── README.md                # GTM & Marketing standards index
+│   ├── marketing-spec.md        # Problem & opportunity spec (write first)
+│   ├── marketing-prd.md
+│   ├── positioning-messaging.md
+│   ├── channel-strategy.md
+│   ├── gtm-launch-planning.md
+│   └── templates/               # GTM & Marketing templates
+│       ├── README.md
+│       ├── marketing-spec-template.md
+│       ├── marketing-prd-template.md
+│       ├── campaign-brief-template.md
+│       ├── positioning-statement-template.md
+│       ├── messaging-hierarchy-template.md
+│       └── content-brief-template.md
 │
 ├── design-docs/                 # Design standards
 │   └── README.md                # Design standards index
