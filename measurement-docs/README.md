@@ -18,6 +18,7 @@ This document serves as an index to comprehensive measurement and analytics stan
 This index file provides access to all measurement and analytics standards, which are organized into discrete markdown files in this directory. This structure makes the standards easier to navigate, maintain, and reference.
 
 Each section contains detailed guidelines, examples, checklists, and best practices for that particular aspect of measurement and analytics. All standards are designed to be:
+
 - **Project-agnostic**: Applicable to any product or organization
 - **Universal**: Can be adapted to different industries and team structures
 - **Comprehensive**: Cover all aspects of measurement and analytics
