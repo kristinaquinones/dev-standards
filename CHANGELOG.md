@@ -54,8 +54,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - Security
   - Architecture Decisions
   - Onboarding & Knowledge Transfer
-  - Sync Instructions for .cursorrules, claude.md, AGENTS.md
-- Added `.cursorrules`, `claude.md`, and `AGENTS.md` for documentation repository standards
+  - Sync Instructions for .cursorrules, CLAUDE.md, AGENTS.md
+- Added `.cursorrules`, `CLAUDE.md`, and `AGENTS.md` for documentation repository standards
 - Created placeholder structure for GTM & Marketing standards (`gtm-mktg-docs/README.md`)
 - Created placeholder structure for Product Management standards (`product-docs/README.md`)
 - Created placeholder structure for Design standards (`design-docs/README.md`)
@@ -68,4 +68,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Reorganized README.md structure to include all standards types (Development, Product, GTM & Marketing, Design)
 - Updated documentation standards to include collapsible section best practices
 
-[1.0.0]: https://github.com/yourusername/dev-standards/releases/tag/v1.0.0
+[1.0.0]: https://github.com/kristinaquinones/dev-standards/releases/tag/v1.0.0

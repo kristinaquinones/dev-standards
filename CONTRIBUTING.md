@@ -34,7 +34,7 @@ This repository contains project-agnostic standards across multiple disciplines 
 2. Maintain consistent formatting
 3. Update links if structure changes
 4. Update index if adding/removing files
-5. Update `.cursorrules`, `claude.md`, and `AGENTS.md` if standards change
+5. Update `.cursorrules`, `CLAUDE.md`, and `AGENTS.md` if standards change
 
 **For fixes:**
 1. Fix the issue (typo, broken link, formatting)
@@ -79,7 +79,7 @@ This repository contains project-agnostic standards across multiple disciplines 
 
 - **"What are universal standards?"** → Everything in the `*-docs/` directories applies across projects
 - **"What's project-specific?"** → Tech stack choices, library selections, deployment platforms, organizational details, brand identity, industry-specific requirements
-- **"How do I customize this?"** → Copy sections and adapt for your organization's needs. For project-specific standards, copy to `.cursorrules`, `claude.md`, or `AGENTS.md` and override with your project's choices
+- **"How do I customize this?"** → Copy sections and adapt for your organization's needs. For project-specific standards, copy to `.cursorrules`, `CLAUDE.md`, or `AGENTS.md` and override with your project's choices
 - **"How often should I update?"** → When standards change (major new decision, team feedback, emerging best practices, new frameworks, updated best practices)
 - **"Should I commit these files?"** → Yes! Keep all standards files in version control. They're documentation, not templates.
 
@@ -103,5 +103,5 @@ This repository contains project-agnostic standards across multiple disciplines 
 ## Related files
 
 - **[.cursorrules](.cursorrules)** - Brief rules for AI assistants
-- **[claude.md](claude.md)** - Detailed contributor guidelines
+- **[CLAUDE.md](CLAUDE.md)** - Detailed contributor guidelines
 - **[AGENTS.md](AGENTS.md)** - Contributing process and standards
