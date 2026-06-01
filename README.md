@@ -1,29 +1,46 @@
 # dev-standards
 
-Waddup fam, I'm @kristinaquinones, and I created this repo to hold general, project-agnostic development standards and other reusable workflow/project components. 
+Waddup fam, I'm @kristinaquinones, and I created this repo to hold general, project-agnostic development standards and other reusable workflow/project components.
 
 ## Overview
 
-This repository serves as a centralized collection of standards, best practices, and reusable project components that can be applied across multiple software projects and organizations. The standards are designed to be universal and adaptable, providing a solid foundation for establishing consistent practices across teams and disciplines.
+This repository serves as a centralized collection of standards, best practices, and reusable project components that can be applied across multiple software projects and organizations. The standards are organized by discipline so they are easier to navigate, adapt, and maintain.
 
 ## Usage
 
 These standards are designed to be:
 - **Project-agnostic**: Applicable to any project or organization regardless of tech stack or industry
 - **Reusable**: Copy and adapt sections as needed for your specific project
-- **Comprehensive**: Cover all aspects of development, product, marketing, and design
+- **Comprehensive**: Cover development, product, marketing, design, and measurement
 - **Maintainable**: Organized into discrete files for easy updates and navigation
 
 To use these standards in your project:
 1. Start with [Philosophy & Principles](philosophy-principles.md) to understand the core values represented in this repo
-2. Review the relevant standards index in the appropriate `*-docs/` directory (each contains a README.md)
+2. Review the relevant standards index in the appropriate `*-docs/` directory (each contains a `README.md`)
 3. Navigate to relevant sections in the corresponding directories
 4. Copy and customize sections as needed for your project
 5. Keep project-specific standards in sync with universal standards
 
+## Changelog management
+
+This repository uses [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) for repository-level change tracking.
+
+- Record notable repository changes in [CHANGELOG.md](CHANGELOG.md)
+- Add new work to `## [Unreleased]`
+- Promote `Unreleased` entries into a dated release section when preparing a release
+- Keep version history only in the root `CHANGELOG.md`
+- Do **not** add version history sections to individual documentation files or section README files
+- Exclude minor editorial-only changes unless they materially change guidance, workflow, or repository usage
+
+Update `CHANGELOG.md` when changes affect:
+- repository structure or file organization
+- contributor workflow or review expectations
+- repository-wide tooling/configuration
+- notable standards, templates, or contributor-facing documentation
+
 ## Contents
 
-### Core Philosophy
+### Core philosophy
 
 Before diving into specific standards, start with the [Philosophy & Principles](philosophy-principles.md) document. This outlines the core values that are reflected in this guide.
 
@@ -32,106 +49,105 @@ Before diving into specific standards, start with the [Philosophy & Principles](
 Comprehensive development standards for software engineering:
 
 #### **[dev-docs/](dev-docs/)**
-  <details>
-  <summary>View all topics</summary>
+<details>
+<summary>View all topics</summary>
 
-  - Philosophy & Principles
-  - Code Organization
-  - Coding Style & Standards
-  - Testing & Quality
-  - Documentation
-  - Git & Version Control
-  - Pull Requests & Code Review
-  - Configuration & Secrets
-  - CI/CD & Build Pipeline
-  - Performance & Scalability
-  - Accessibility & Inclusivity
-  - Security
-  - Architecture Decisions
-  - Onboarding & Knowledge Transfer
+- Philosophy & Principles
+- Code Organization
+- Coding Style & Standards
+- Testing & Quality
+- Documentation
+- Git & Version Control
+- Pull Requests & Code Review
+- Configuration & Secrets
+- CI/CD & Build Pipeline
+- Performance & Scalability
+- Accessibility & Inclusivity
+- Security
+- Architecture Decisions
+- Onboarding & Knowledge Transfer
 
-  </details>
+</details>
 
 ### Product management standards
 
 Product management standards and best practices:
 
 #### **[product-docs/](product-docs/)**
-  <details>
-  <summary>View all topics</summary>
+<details>
+<summary>View all topics</summary>
 
-  - Philosophy & Principles
-  - Product Strategy & Vision
-  - User Research & Discovery
-  - Roadmap Planning
-  - Product & Design Process (unified feature definition and design process)
-  - User Stories
-  - Prioritization Frameworks
-  - Stakeholder Management
-  - Metrics & Success Criteria
-  - Release Planning
-  - Templates (Product & Design Brief, User Stories)
+- Philosophy & Principles
+- Product Strategy & Vision
+- User Research & Discovery
+- Roadmap Planning
+- Product & Design Process (unified feature definition and design process)
+- User Stories
+- Prioritization Frameworks
+- Stakeholder Management
+- Metrics & Success Criteria
+- Release Planning
+- Templates (Product & Design Brief, User Stories)
 
-  </details>
+</details>
 
 ### GTM & marketing standards
 
 Go-to-market and marketing standards and best practices:
 
 #### **[gtm-mktg-docs/](gtm-mktg-docs/)**
-  <details>
-  <summary>View all topics</summary>
+<details>
+<summary>View all topics</summary>
 
-  - Marketing Spec (Problem & Opportunity Spec)
-  - Marketing PRD
-  - Positioning & Messaging
-  - Channel Strategy
-  - GTM Launch Planning
-  - Templates (Marketing Spec, Marketing PRD, Positioning, Campaign Brief, Messaging Hierarchy, Content Brief)
-  
-  </details>
+- Marketing Spec (Problem & Opportunity Spec)
+- Marketing PRD
+- Positioning & Messaging
+- Channel Strategy
+- GTM Launch Planning
+- Templates (Marketing Spec, Marketing PRD, Positioning, Campaign Brief, Messaging Hierarchy, Content Brief)
+
+</details>
 
 ### Design standards
 
 Design standards and best practices:
 
 #### **[design-docs/](design-docs/)**
-  <details>
-  <summary>View all topics</summary>
+<details>
+<summary>View all topics</summary>
 
-  - Information Architecture
-  - Interaction Design
-  - Usability Evaluation
-  - Templates (Design System, Handoff, Usability Testing)
-  
-  **Note:** For the unified product and design process, see [Product & Design Process](product-docs/product-design-process.md).
-  
-  </details>
+- Information Architecture
+- Interaction Design
+- Usability Evaluation
+- Templates (Design System, Handoff, Usability Testing)
+
+**Note:** For the unified product and design process, see [Product & Design Process](product-docs/product-design-process.md).
+
+</details>
 
 ### Measurement & analytics standards
 
 Measurement and analytics standards and best practices:
 
 #### **[measurement-docs/](measurement-docs/)**
-  <details>
-  <summary>View all topics</summary>
+<details>
+<summary>View all topics</summary>
 
-  - Analytics Strategy
-  - A/B Testing & Experimentation
-  - Data Analysis & Interpretation
-  - Data Governance
-  
-  </details>
+- Analytics Strategy
+- A/B Testing & Experimentation
+- Data Analysis & Interpretation
+- Data Governance
 
+</details>
 
 ---
 
 ### Repository structure
 
-```
+```text
 dev-standards/
 ├── README.md                    # This file
-├── CHANGELOG.md                 # Version history and changes
+├── CHANGELOG.md                 # Version history and notable repository changes
 ├── LICENSE                      # GPL v3 license
 ├── .cursorrules                 # AI assistant rules
 ├── CLAUDE.md                    # Contributor guidelines
@@ -166,12 +182,12 @@ dev-standards/
 │   ├── stakeholder-management.md
 │   ├── metrics-success-criteria.md
 │   ├── release-planning.md
-│   └── templates/                # Product templates
+│   └── templates/               # Product templates
 │       ├── README.md
 │       ├── product-design-brief-template.md
 │       └── user-story-template.md
 │
-├── gtm-mktg-docs/              # GTM & Marketing standards
+├── gtm-mktg-docs/               # GTM & Marketing standards
 │   ├── README.md                # GTM & Marketing standards index
 │   ├── marketing-spec.md        # Problem & opportunity spec (write first)
 │   ├── marketing-prd.md
@@ -200,9 +216,14 @@ dev-standards/
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for the complete contributing process, guidelines, and frequently asked questions.
 
+For AI/contributor workflow guidance, also see:
+- [AGENTS.md](AGENTS.md)
+- [CLAUDE.md](CLAUDE.md)
+- [.cursorrules](.cursorrules)
+
 ## Version history
 
-See [CHANGELOG.md](CHANGELOG.md) for the full version history.
+See [CHANGELOG.md](CHANGELOG.md) for the full version history and release notes.
 
 ## License
 
