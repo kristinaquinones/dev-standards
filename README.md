@@ -85,7 +85,10 @@ Go-to-market and marketing standards and best practices:
   - Positioning & Messaging
   - Channel Strategy
   - GTM Launch Planning
-  - Templates (Positioning, Campaign Brief, Messaging Hierarchy, Content Brief)
+  - Buyer Personas
+  - Competitive Analysis
+  - Content Strategy
+  - Templates (Positioning, Campaign Brief, Messaging Hierarchy, Content Brief, Buyer Persona)
   
   </details>
 

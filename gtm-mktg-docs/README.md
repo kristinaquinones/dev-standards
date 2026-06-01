@@ -9,6 +9,9 @@ This document serves as an index to comprehensive go-to-market and marketing sta
 1. [Positioning & Messaging](positioning-messaging.md) - Frameworks for developing positioning and messaging
 2. [Channel Strategy](channel-strategy.md) - Framework for selecting and managing marketing channels
 3. [GTM Launch Planning](gtm-launch-planning.md) - Frameworks for planning go-to-market launches
+4. [Buyer Personas](buyer-personas.md) - Framework for developing and using buyer personas
+5. [Competitive Analysis](competitive-analysis.md) - Framework for analyzing competitors and finding differentiation
+6. [Content Strategy](content-strategy.md) - Framework for planning and executing a content strategy
 
 ### Templates
 
@@ -21,6 +24,7 @@ This document serves as an index to comprehensive go-to-market and marketing sta
   - [Positioning Statement Template](templates/positioning-statement-template.md) - Template for developing positioning statements (used in Campaign Brief)
   - [Messaging Hierarchy Template](templates/messaging-hierarchy-template.md) - Template for organizing messaging (used in Campaign Brief)
   - [Content Brief Template](templates/content-brief-template.md) - Template for content creation briefs (used in Campaign Brief)
+  - [Buyer Persona Template](templates/buyer-persona-template.md) - Template for building buyer persona profiles
 
 ---
 
