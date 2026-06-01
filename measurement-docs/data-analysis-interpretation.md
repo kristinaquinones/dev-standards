@@ -419,5 +419,4 @@ Good insights should:
 
 - [Analytics Strategy](analytics-strategy.md) - Planning what to analyze
 - [A/B Testing & Experimentation](ab-testing-experimentation.md) - Using experiments for causal analysis
-- [Metrics & Success Criteria](../../product-docs/metrics-success-criteria.md) - Defining metrics to analyze
-
+- [Metrics & Success Criteria](../product-docs/metrics-success-criteria.md) - Defining metrics to analyze

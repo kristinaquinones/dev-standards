@@ -2,6 +2,18 @@
   "ignorePatterns": [
     {
       "pattern": "^https://github.com/kristinaquinones/dev-standards/releases"
+    },
+    {
+      "pattern": "^\\[Target\\]$"
+    },
+    {
+      "pattern": "^\\[Description\\]$"
+    },
+    {
+      "pattern": "^%5BTarget%5D$"
+    },
+    {
+      "pattern": "^%5BDescription%5D$"
     }
   ],
   "retryOn429": true,

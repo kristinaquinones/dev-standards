@@ -2,7 +2,7 @@
 
 ## Overview
 
-Defining success metrics and criteria upfront ensures product work delivers intended outcomes. This document covers how to define, track, and use metrics effectively. For detailed analytics and measurement practices, see [measurement-docs/](../../measurement-docs/).
+Defining success metrics and criteria upfront ensures product work delivers intended outcomes. This document covers how to define, track, and use metrics effectively. For detailed analytics and measurement practices, see [measurement-docs/](../measurement-docs/).
 
 ## Defining success
 
@@ -31,7 +31,7 @@ The SMART framework ensures your success criteria are actionable and measurable:
 - ❌ **Not SMART**: "Make onboarding better"
 - ✅ **SMART**: "Increase onboarding completion rate from 60% to 75% within 3 months by reducing steps from 5 to 3"
 
-For experiments, SMART goals are especially important - see [A/B Testing & Experimentation](../../measurement-docs/ab-testing-experimentation.md#experiment-design-framework) for how to apply SMART goals to experiment design.
+For experiments, SMART goals are especially important - see [A/B Testing & Experimentation](../measurement-docs/ab-testing-experimentation.md#experiment-design-framework) for how to apply SMART goals to experiment design.
 
 ### Types of Success Criteria
 
@@ -199,13 +199,12 @@ For detailed guidance on:
 - A/B testing and experimentation
 - Advanced measurement techniques
 
-See [measurement-docs/](../../measurement-docs/) for comprehensive measurement and analytics standards.
+See [measurement-docs/](../measurement-docs/) for comprehensive measurement and analytics standards.
 
 ## Related topics
 
 - [Product Strategy & Vision](product-strategy-vision.md) - Connecting metrics to strategic goals
 - [Release Planning](release-planning.md) - Defining success for releases
 - [Product & Design Process](product-design-process.md) - Including success criteria in feature definition
-- [A/B Testing & Experimentation](../../measurement-docs/ab-testing-experimentation.md) - Using SMART goals in experiment design
-- [measurement-docs/](../../measurement-docs/) - Detailed analytics and measurement practices
-
+- [A/B Testing & Experimentation](../measurement-docs/ab-testing-experimentation.md) - Using SMART goals in experiment design
+- [measurement-docs/](../measurement-docs/) - Detailed analytics and measurement practices
