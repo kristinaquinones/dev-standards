@@ -72,7 +72,7 @@ dev-standards/
 ├── CHANGELOG.md                 # Version history
 ├── LICENSE                      # License file
 ├── .cursorrules                 # AI assistant rules
-├── claude.md                    # This file
+├── CLAUDE.md                    # This file
 ├── AGENTS.md                    # Contributing process
 ├── dev-docs/                    # Development standards
 │   └── README.md                # Development standards index
@@ -217,7 +217,7 @@ Before submitting a PR:
 
 **The Trio:**
 - `.cursorrules` - Brief rules for AI assistants
-- `claude.md` - This file (detailed guidelines)
+- `CLAUDE.md` - This file (detailed guidelines)
 - `AGENTS.md` - Contributing process
 
 **When updating standards:**
@@ -225,20 +225,20 @@ Before submitting a PR:
 2. Update the relevant `*-docs/README.md` index if structure changes
 3. Review for cross-referencing opportunities across all standards directories
 4. Check for DRY conflicts and resolve or consolidate as needed
-5. Update `.cursorrules`, `claude.md`, and `AGENTS.md` if standards change
+5. Update `.cursorrules`, `CLAUDE.md`, and `AGENTS.md` if standards change
 6. Keep all three files consistent with each other
 
 ### Version History
 
 **Location:**
-- Version history is maintained **ONLY** in the root `README.md` file
+- Version history is maintained in `CHANGELOG.md` at the repository root
 - Do **NOT** add version history sections to individual documentation files or section README files
 - This ensures a single source of truth for change tracking and follows DRY principles
 
 **Format:**
-- Use a table with columns: Version | Date | Contributor | Changes
-- Contributor should be in GitHub username format: `@username`
-- Include meaningful descriptions of what changed in each version
+- Follow [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) format
+- Group changes under `Added`, `Changed`, `Removed`, `Fixed` headings
+- Update `CHANGELOG.md` when making significant changes
 
 ## Questions?
 

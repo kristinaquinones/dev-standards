@@ -30,9 +30,9 @@ project-root/
 ├── .env.example              # Template for env vars (checked in)
 ├── .env.local                # Local env vars (NOT checked in; in .gitignore)
 ├── .gitignore
-├── .cursorrules              # AI assistant guidelines (sync with claude.md, AGENTS.md)
-├── claude.md                 # Contributor guidelines (sync with .cursorrules, AGENTS.md)
-├── AGENTS.md                 # Contributing process & standards (sync with .cursorrules, claude.md)
+├── .cursorrules              # AI assistant guidelines (sync with CLAUDE.md, AGENTS.md)
+├── CLAUDE.md                 # Contributor guidelines (sync with .cursorrules, AGENTS.md)
+├── AGENTS.md                 # Contributing process & standards (sync with .cursorrules, CLAUDE.md)
 ├── dev-docs/README.md        # Development standards index
 ├── README.md
 └── CHANGELOG.md

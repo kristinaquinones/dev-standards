@@ -1,0 +1,36 @@
+name: Markdown link and lint check
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  markdown-lint:
+    name: Lint markdown files
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Lint markdown
+        uses: DavidAnson/markdownlint-cli2-action@v16
+        with:
+          globs: "**/*.md"
+          config: ".markdownlint.json"
+
+  link-check:
+    name: Check links
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check markdown links
+        uses: gaurav-nelson/github-action-markdown-link-check@v1
+        with:
+          use-quiet-mode: "yes"
+          use-verbose-mode: "no"
+          config-file: ".markdown-link-check.json"
+          folder-path: "."
+          file-extension: ".md"
+          check-modified-files-only: "no"

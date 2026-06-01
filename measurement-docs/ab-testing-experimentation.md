@@ -458,7 +458,7 @@ Statistical significance tells you an effect exists, but effect size tells you i
 
 ### Experiment Design Framework
 
-Use this framework to design experiments that deliver clear, actionable results. Each step should align with SMART goals (Specific, Measurable, Achievable, Relevant, Time-bound) - see [SMART Goals Framework](../product-docs/metrics-success-criteria.md) for more on defining success criteria.
+Use this framework to design experiments that deliver clear, actionable results. Each step should align with SMART goals (Specific, Measurable, Achievable, Relevant, Time-bound) - see [SMART Goals Framework](../product-docs/metrics-success-criteria.md#smart-goals-framework) for details.
 
 1. **Question**: What are we trying to learn? (SMART: Specific, Relevant)
 2. **Hypothesis**: What do we think will happen? (SMART: Specific, Achievable)

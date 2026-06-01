@@ -27,7 +27,7 @@ To use these standards in your project:
 
 Before diving into specific standards, start with the [Philosophy & Principles](philosophy-principles.md) document. This outlines the core values that are reflected in this guide.
 
-### Development Standards
+### Development standards
 
 Comprehensive development standards for software engineering:
 
@@ -52,7 +52,7 @@ Comprehensive development standards for software engineering:
 
   </details>
 
-### Product Management Standards
+### Product management standards
 
 Product management standards and best practices:
 
@@ -74,7 +74,7 @@ Product management standards and best practices:
 
   </details>
 
-### GTM & Marketing Standards
+### GTM & marketing standards
 
 Go-to-market and marketing standards and best practices:
 
@@ -89,7 +89,7 @@ Go-to-market and marketing standards and best practices:
   
   </details>
 
-### Design Standards
+### Design standards
 
 Design standards and best practices:
 
@@ -106,7 +106,7 @@ Design standards and best practices:
   
   </details>
 
-### Measurement & Analytics Standards
+### Measurement & analytics standards
 
 Measurement and analytics standards and best practices:
 
@@ -124,7 +124,7 @@ Measurement and analytics standards and best practices:
 
 ---
 
-### Repository Structure
+### Repository structure
 
 ```
 dev-standards/
@@ -132,7 +132,7 @@ dev-standards/
 ├── CHANGELOG.md                 # Version history and changes
 ├── LICENSE                      # GPL v3 license
 ├── .cursorrules                 # AI assistant rules
-├── claude.md                    # Contributor guidelines
+├── CLAUDE.md                    # Contributor guidelines
 ├── AGENTS.md                    # Contributing process
 │
 ├── philosophy-principles.md     # Core philosophy and principles
@@ -187,9 +187,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for the complete contributing process, gu
 
 ## Version history
 
-| Version | Date | Contributor | Changes |
-|---------|------|-------------|---------|
-| 1.0.0 | 2025-12-23 | @kristinaquinones | Initial repository structure with development, product, measurement, design, and GTM standards. |
+See [CHANGELOG.md](CHANGELOG.md) for the full version history.
 
 ## License
 

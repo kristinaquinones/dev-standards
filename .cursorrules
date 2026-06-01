@@ -19,7 +19,7 @@ This is a documentation-only repository containing project-agnostic standards ac
 - No trailing whitespace
 
 ### File Organization
-- Root level: README.md, CHANGELOG.md, LICENSE, .cursorrules, claude.md, AGENTS.md
+- Root level: README.md, CHANGELOG.md, LICENSE, .cursorrules, CLAUDE.md, AGENTS.md
 - Standards files: Organized by discipline in `*-docs/` directories (kebab-case filenames matching main heading)
 - Each file: Start with `#` title matching filename, use `##` for major sections, `###` for subsections
 - Directory structure:
@@ -28,7 +28,7 @@ This is a documentation-only repository containing project-agnostic standards ac
   ├── README.md
   ├── CHANGELOG.md
   ├── LICENSE
-  ├── .cursorrules, claude.md, AGENTS.md (trio files)
+  ├── .cursorrules, CLAUDE.md, AGENTS.md (trio files)
   ├── dev-docs/ (development standards)
   ├── product-docs/ (product management standards)
   ├── gtm-mktg-docs/ (GTM & marketing standards)
@@ -84,14 +84,14 @@ Before submitting PR:
 - [ ] Tables are readable and aligned
 
 ### Keeping Files in Sync
-- The Trio: `.cursorrules` (brief AI rules), `claude.md` (detailed guidelines), `AGENTS.md` (contributing process)
-- When updating standards: Update relevant file in `dev-docs/`, update `DEVELOPMENT-STANDARDS.md` index if structure changes, update trio files if standards change, keep all three consistent
-- Sync checklist: `.cursorrules` updated with key rule, `claude.md` updated with detailed explanation, `AGENTS.md` updated with process/checklist
+- The Trio: `.cursorrules` (brief AI rules), `CLAUDE.md` (detailed guidelines), `AGENTS.md` (contributing process)
+- When updating standards: Update relevant file in the appropriate `*-docs/` directory, update that section's `README.md` index if structure changes, update trio files if standards change, keep all three consistent
+- Sync checklist: `.cursorrules` updated with key rule, `CLAUDE.md` updated with detailed explanation, `AGENTS.md` updated with process/checklist
 
 ### Version History
-- Version history is maintained ONLY in the root README.md file
+- Version history is maintained in `CHANGELOG.md` at the repository root following [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) format
 - Do NOT add version history sections to individual documentation files or section README files
-- All changes should be tracked in the root README.md version history table with contributor GitHub username (@username format)
+- Update `CHANGELOG.md` when making significant changes
 
 ### Cross-Reference & DRY Review
 - Review all docs for cross-referencing opportunities: Link related topics across all standards directories

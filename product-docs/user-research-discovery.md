@@ -173,5 +173,4 @@ User research should inform experiment design. For example, if user interviews r
 - [Product & Design Process](product-design-process.md) - Using research to define features and design solutions
 - [Prioritization Frameworks](prioritization-frameworks.md) - Using research insights for prioritization
 - [Metrics & Success Criteria](metrics-success-criteria.md) - Measuring research impact
-- [A/B Testing & Experimentation](../../measurement-docs/ab-testing-experimentation.md) - Validating research insights with experiments
-
+- [A/B Testing & Experimentation](../measurement-docs/ab-testing-experimentation.md) - Validating research insights with experiments
