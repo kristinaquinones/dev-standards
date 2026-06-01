@@ -9,7 +9,7 @@ Buyer personas are semi-fictional representations of your ideal customers based 
 A buyer persona captures the key characteristics of a customer segment in a way that makes them tangible and actionable. A good persona goes beyond demographics to capture motivations, goals, pain points, and behavior patterns.
 
 **Personas help you:**
-- Develop positioning and messaging that resonates
+- Develop positioning and messaging that resonates with your audience
 - Choose the right channels to reach your audience
 - Create content that addresses real needs
 - Prioritize features and marketing activities

@@ -88,7 +88,7 @@ Research each competitor across these dimensions:
 ### Step 3: Analyze the Landscape
 
 **Positioning Map:**
-Create a 2x2 matrix to visualize competitive positioning. Choose two axes that are most relevant to your market (e.g., simplicity vs. power, price vs. breadth). Plot each competitor and yourself to identify white space.
+Create a 2x2 matrix to visualize competitive positioning. Choose two axes that are most relevant to your market (e.g., simplicity vs. power, price vs. breadth). Plot each competitor and your product to identify white space.
 
 **Strengths and Weaknesses:**
 For each competitor, identify:
