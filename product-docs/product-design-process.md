@@ -205,6 +205,8 @@ Hunches about user needs can inform feature ideas, but validate with data - use 
 
 ## User Stories
 
+User stories are the primary unit of work for defining what to build. For comprehensive guidance on writing, splitting, and managing user stories, see the dedicated [User Stories](user-stories.md) document.
+
 ### User Story Format
 
 User stories follow a simple template:
@@ -372,6 +374,7 @@ When stories are too large, split them:
 
 - [User Research & Discovery](user-research-discovery.md) - Understanding users
 - [Product Strategy & Vision](product-strategy-vision.md) - Aligning with strategy
+- [User Stories](user-stories.md) - Writing, splitting, and managing user stories
 - [Prioritization Frameworks](prioritization-frameworks.md) - Deciding what to build
 - [Information Architecture](../design-docs/information-architecture.md) - Organizing information
 - [Interaction Design](../design-docs/interaction-design.md) - Designing interactions

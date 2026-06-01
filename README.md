@@ -65,6 +65,7 @@ Product management standards and best practices:
   - User Research & Discovery
   - Roadmap Planning
   - Product & Design Process (unified feature definition and design process)
+  - User Stories
   - Prioritization Frameworks
   - Stakeholder Management
   - Metrics & Success Criteria
@@ -158,6 +159,7 @@ dev-standards/
 │   ├── user-research-discovery.md
 │   ├── roadmap-planning.md
 │   ├── product-design-process.md
+│   ├── user-stories.md
 │   ├── prioritization-frameworks.md
 │   ├── stakeholder-management.md
 │   ├── metrics-success-criteria.md

@@ -11,10 +11,11 @@ This document serves as an index to comprehensive product management standards a
 3. [User Research & Discovery](user-research-discovery.md)
 4. [Roadmap Planning](roadmap-planning.md)
 5. [Product & Design Process](product-design-process.md) - Unified process for defining features and designing user experiences
-6. [Prioritization Frameworks](prioritization-frameworks.md)
-7. [Stakeholder Management](stakeholder-management.md)
-8. [Metrics & Success Criteria](metrics-success-criteria.md)
-9. [Release Planning](release-planning.md)
+6. [User Stories](user-stories.md) - Writing, splitting, and managing user stories
+7. [Prioritization Frameworks](prioritization-frameworks.md)
+8. [Stakeholder Management](stakeholder-management.md)
+9. [Metrics & Success Criteria](metrics-success-criteria.md)
+10. [Release Planning](release-planning.md)
 
 ### Templates
 
