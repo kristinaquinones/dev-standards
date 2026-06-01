@@ -4,7 +4,7 @@
 **Date:** [Date]  
 **Author:** [Your Name]
 
-> Complete a [Marketing PRD](../marketing-prd.md) first so this brief starts from a clearly defined purpose, audience, deliverable, and measurement plan.
+> Complete a [Marketing Spec](../marketing-spec.md) and [Marketing PRD](../marketing-prd.md) first so this brief starts from a clearly defined problem, purpose, audience, deliverable, and measurement plan.
 
 ## Campaign Overview
 

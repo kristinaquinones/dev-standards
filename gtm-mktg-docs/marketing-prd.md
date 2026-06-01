@@ -2,9 +2,13 @@
 
 ## Overview
 
-A Marketing PRD is a lightweight requirements document for marketing work. It helps teams define the outcome they want, the audience they serve, the deliverable they are shipping, and how success will be measured before execution begins.
+A Marketing PRD is a detailed requirements document for marketing work. It defines the outcome you want, the audience you serve, the deliverable you are shipping, and how success will be measured — in enough depth to direct execution.
 
-This is useful with or without AI, but it becomes especially valuable when AI is involved. Large language models are non-deterministic, so broad requests tend to produce broad, averaged-down output. A clearer spec creates tighter plans, more relevant output, and less back-and-forth refinement.
+**The PRD is the second step, not the first.** Before writing the PRD, write a [Marketing Spec](marketing-spec.md). The spec defines the problem and aligns stakeholders on the bet. The PRD translates that alignment into detailed requirements. The brief then turns those requirements into execution direction.
+
+**Spec → PRD → Brief**
+
+This sequence is useful with or without AI, but it becomes especially valuable when AI is involved. Large language models are non-deterministic, so broad requests tend to produce broad, averaged-down output. A well-defined spec fed into a detailed PRD creates tighter plans, more relevant output, and significantly less back-and-forth refinement.
 
 ## Why use a Marketing PRD?
 
@@ -112,13 +116,13 @@ Good AI use is not about delegating the whole role. It is about giving the tool 
 
 ## Recommended workflow
 
-1. Define the outcome before requesting output
-2. Write the Marketing PRD
-3. Validate the audience and success criteria
-4. Use the PRD to brief teammates or AI systems
-5. Produce deliverables such as campaigns, launch plans, or content
+1. Write the [Marketing Spec](marketing-spec.md) — define the problem, audience, and bet before writing requirements
+2. Use the spec as the foundation for this PRD
+3. Validate the audience understanding and success criteria
+4. Use the PRD to brief teammates, partners, or AI systems
+5. Produce deliverables such as campaigns, launch plans, or content using the [Campaign Brief Template](templates/campaign-brief-template.md)
 6. Measure results against the stated success criteria
-7. Refine the PRD pattern based on what you learn
+7. Refine the spec and PRD pattern based on what you learn
 
 ## Common pitfalls
 
@@ -131,8 +135,10 @@ Good AI use is not about delegating the whole role. It is about giving the tool 
 
 ## Related Topics
 
+- [Marketing Spec](marketing-spec.md) - Problem and opportunity spec; write this before the PRD
 - [Positioning & Messaging](positioning-messaging.md) - Defining what you need to communicate
 - [Channel Strategy](channel-strategy.md) - Choosing where work will show up
 - [GTM Launch Planning](gtm-launch-planning.md) - Planning coordinated launch execution
+- [Marketing Spec Template](templates/marketing-spec-template.md) - Reusable template for writing a marketing spec
 - [Campaign Brief Template](templates/campaign-brief-template.md) - Turning strategy into a campaign brief
 - [Marketing PRD Template](templates/marketing-prd-template.md) - Reusable template for writing a Marketing PRD
