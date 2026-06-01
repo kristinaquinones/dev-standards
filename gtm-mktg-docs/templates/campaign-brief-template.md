@@ -4,6 +4,8 @@
 **Date:** [Date]  
 **Author:** [Your Name]
 
+> Complete a [Marketing PRD](../marketing-prd.md) first so this brief starts from a clearly defined purpose, audience, deliverable, and measurement plan.
+
 ## Campaign Overview
 
 ### Campaign Goal
@@ -225,4 +227,3 @@ Get started in minutes, not hours. No complex setup or training required.
 - [Content Brief Template](content-brief-template.md) - Detailed content planning
 - [User Story Template](../../product-docs/templates/user-story-template.md) - User story format
 - [Channel Strategy](../channel-strategy.md) - Channel selection frameworks
-

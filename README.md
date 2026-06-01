@@ -82,13 +82,11 @@ Go-to-market and marketing standards and best practices:
   <details>
   <summary>View all topics</summary>
 
+  - Marketing PRD
   - Positioning & Messaging
   - Channel Strategy
   - GTM Launch Planning
-  - Buyer Personas
-  - Competitive Analysis
-  - Content Strategy
-  - Templates (Positioning, Campaign Brief, Messaging Hierarchy, Content Brief, Buyer Persona)
+  - Templates (Marketing PRD, Positioning, Campaign Brief, Messaging Hierarchy, Content Brief)
   
   </details>
 
