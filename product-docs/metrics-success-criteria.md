@@ -2,7 +2,7 @@
 
 ## Overview
 
-Defining success metrics and criteria upfront ensures product work delivers intended outcomes. This document covers how to define, track, and use metrics effectively. For detailed analytics and measurement practices, see [measurement-docs/](../measurement-docs/).
+Defining success metrics and criteria upfront ensures product work delivers intended outcomes. This document covers how to define, track, and use metrics effectively. For detailed analytics and measurement guidance, see [measurement-docs](../measurement-docs/).
 
 ## Defining success
 
@@ -199,7 +199,7 @@ For detailed guidance on:
 - A/B testing and experimentation
 - Advanced measurement techniques
 
-See [measurement-docs/](../measurement-docs/) for comprehensive measurement and analytics standards.
+See [measurement-docs](../measurement-docs/) for comprehensive measurement and analytics standards.
 
 ## Related topics
 
@@ -207,4 +207,4 @@ See [measurement-docs/](../measurement-docs/) for comprehensive measurement and 
 - [Release Planning](release-planning.md) - Defining success for releases
 - [Product & Design Process](product-design-process.md) - Including success criteria in feature definition
 - [A/B Testing & Experimentation](../measurement-docs/ab-testing-experimentation.md) - Using SMART goals in experiment design
-- [measurement-docs/](../measurement-docs/) - Detailed analytics and measurement practices
+- [measurement-docs](../measurement-docs/) - Detailed analytics and measurement practices
