@@ -2,7 +2,7 @@
 
 ## Overview
 
-A/B testing and experimentation allow you to make data-driven decisions by comparing different versions of a product or feature to understand which performs better. Experiments help validate hypotheses, measure the true impact of changes, and avoid making decisions based on assumptions or correlation alone.
+A/B testing and experimentation allow you to make data-driven decisions by comparing different versions of a product or feature to understand which performs better. Experiments help validate hypotheses, reduce uncertainty, and improve outcomes through structured learning.
 
 ## Why experiment?
 
@@ -144,7 +144,7 @@ By comparing a treatment group (users who see the change) to a control group (us
 - You can now focus resources on features that actually drive retention
 
 **The Key Insight:**
-Observed data showed retention increased, but incrementality revealed the feature had no effect. The increase was caused by external factors that affected both groups equally. Only by comparing treatment and control groups can you isolate the true impact of your change.
+Observed data showed retention increased, but incrementality revealed the feature had no effect. The increase was caused by external factors that affected both groups equally. Only by comparing treatment and control groups can you isolate the actual impact of your change.
 
 ### Statistical Concepts
 
@@ -172,28 +172,26 @@ Instead of saying "the effect is exactly 5%," we say "the effect is probably bet
 - **Range of Values**: The likely range where the true effect actually is
 - **Example**: "5% increase, with 95% confidence it's between 3% and 7%"
 - **What It Means**: We're pretty sure (95% sure) the real effect is somewhere in that range
-- **Wider Range**: Less certainty - happens when your data is all over the place (e.g., in your test group, some users clicked 10 times while others clicked 0 times - that's messy, hard-to-predict data). You'll need more users or more consistent behavior to narrow it down.
-- **Narrow Range**: More certainty - happens when your data is consistent and predictable (e.g., in your test group, most users clicked 4-6 times with very few outliers - that's clean, reliable data). With consistent behavior, you can be more confident about the true effect.
+- **Wider Range**: Less certainty - happens when your data is all over the place (e.g., in your test group, some users clicked 10 times while others clicked 0 times - that's messy, hard-to-predict data)
+- **Narrow Range**: More certainty - happens when your data is consistent and predictable (e.g., in your test group, most users clicked 4-6 times with very few outliers - that's clean, reliable data)
 
 **When Results Aren't Significant (This Can Be Useful Too!):**
 
 Lack of statistical significance or high variance isn't always a failure - it can tell you important things:
 
-- **No Effect Found**: If your test shows no significant difference, that's valuable information. Maybe the change doesn't matter, or you need a bigger change to see results. Example: Testing button color and finding no difference suggests users don't care about that color choice - you can stop worrying about it and focus elsewhere.
+- **No Effect Found**: If your test shows no significant difference, that's valuable information. Maybe the change doesn't matter, or you need a bigger change to see results. Example: Testing button color shows no meaningful difference, so you can stop debating colors and focus on more impactful changes.
 
-- **High Variance Reveals Problems**: If your data is all over the place, that might indicate a real issue. Example: If some users complete onboarding in 2 minutes while others take 2 hours, the high variance tells you your onboarding experience is inconsistent - that's a problem worth fixing, even if the average looks fine.
+- **High Variance Reveals Problems**: If your data is all over the place, that might indicate a real issue. Example: If some users complete onboarding in 2 minutes while others take 2 hours, the high variance suggests an inconsistent experience that needs investigation.
 
 **Using Calculators:**
 
 You don't need to calculate these by hand! Use online calculators to:
 
 - **Calculate Sample Size**: Figure out how many users you need for your experiment
-  - [Statsig Sample Size Calculator](https://www.statsig.com/sample-size-calculator) - Calculate required sample size
   - [Evan's Awesome A/B Tools](https://www.evanmiller.org/ab-testing/sample-size.html) - Sample size calculator
   - [Optimizely Sample Size Calculator](https://www.optimizely.com/sample-size-calculator/) - Experiment planning tool
 
 - **Calculate Statistical Significance**: Check if your results are significant
-  - [Statsig Significance Calculator](https://www.statsig.com/significance-calculator) - Test statistical significance
   - [AB Testguide](https://abtestguide.com/calc/) - A/B test calculator
   - [VWO A/B Test Significance Calculator](https://vwo.com/ab-split-test-significance-calculator/) - Significance testing
 
@@ -209,14 +207,14 @@ You don't need to calculate these by hand! Use online calculators to:
 - **Problem**: Ending an experiment as soon as you see a positive result
 - **Why It's Wrong**: Early results can be due to chance (regression to the mean)
      - **Example**: After 3 days, your test shows a 10% improvement and looks "significant." You stop and launch. But by day 7 (your planned end date), that improvement has shrunk to 2% and is no longer significant.
-     - Early results often look better (or worse) than they really are because you haven't reached enough participants yet, or you're measuring before users have had enough time to complete the action you're tracking (e.g., measuring 7-day retention after only 3 days).
+     - Early results often look better (or worse) than they really are because you haven't reached enough participants yet, or you're measuring before users have had enough time to complete the action you're tracking.
 - **Solution**: Wait for statistical significance and run for planned duration
 
 **Pitfall 2: Peeking at Results**
 
 - **Problem**: Checking results multiple times and stopping when you like what you see
 - **Why It's Wrong**: Increases false positive rate (multiple comparisons problem)
-     - A well-designed experiment with a clear plan from the start doesn't require multiple checks. The experiment design already accounts for the sample size and duration needed. Trust the process, buddy.
+     - A well-designed experiment with a clear plan from the start doesn't require multiple checks. The experiment design already accounts for the sample size and duration needed. Trust the process.
 - **Solution**: Decide on analysis plan upfront, stick to it 
 
 **Pitfall 3: Ignoring Secondary Metrics**
@@ -230,7 +228,7 @@ You don't need to calculate these by hand! Use online calculators to:
 
 - **Problem**: A result is statistically significant but practically meaningless
 - **Why It's Wrong**: A 0.5% improvement might be significant but not worth the effort
-     - For some products, a 0.5% improvement might be worth +$100k ARR, and for others, this might be worth +$1k ARR. Whether or not it's worth it then depends on your product/organizational goals and the cost these changes. Will you get +$1k for something that'll cost +$5k to maintain? Or is the one time cost of implementation sub $500?
+     - For some products, a 0.5% improvement might be worth +$100k ARR, and for others, this might be worth +$1k ARR. Whether or not it's worth it then depends on your product/organizational goals.
 - **Solution**: Consider effect size and practical importance, not just p-values
 
 **Pitfall 5: Assuming Correlation is Causation**
@@ -244,8 +242,8 @@ You don't need to calculate these by hand! Use online calculators to:
 - **Problem**: Testing many things and finding "significant" results by chance
 - **Why It's Wrong**: The more tests you run, the more likely false positives.
      - If you test 20 different button colors, even if none actually work, you'll likely find 1 "significant" result just by chance (5% of 20 = 1 false positive).
-     - **Another Example**: You test 10 different headlines for your landing page simultaneously. One shows a 15% improvement with p < 0.05, so you launch it. But you've essentially run 10 tests - the chance of at least one false positive is now ~40%, not 5%. That "winning" headline might not actually be better.
-- **Solution**: The simplest approach is to test one thing at a time. If you must test multiple things, be more strict about what counts as "significant" (e.g., require stronger evidence when testing 10 things vs. 1 thing). Many analytics tools can handle this automatically - just be aware that testing many things at once increases the chance of false positives.
+     - **Another Example**: You test 10 different headlines for your landing page simultaneously. One shows a 15% improvement with p < 0.05, so you launch it. But you've essentially run 10 tests, so that result may just be random chance.
+- **Solution**: The simplest approach is to test one thing at a time. If you must test multiple things, be more strict about what counts as "significant" (e.g., require stronger evidence when testing many variants).
 
 ### When to Use Incrementality
 
@@ -265,7 +263,7 @@ Consider simpler approaches when:
 
 ## Experiment types (in practice)
 
-**Reality Check:** People use "A/B test" to mean any experiment that compares groups. A/B, A/B/N (testing multiple variants), and split tests are all the same thing - comparing different versions to see which performs better. Don't get hung up on terminology.
+**Reality Check:** People use "A/B test" to mean any experiment that compares groups. A/B, A/B/N (testing multiple variants), and split tests are all the same thing - comparing different versions of something. The key is having a control and measuring incrementality.
 
 ### What You're Actually Testing
 
@@ -315,7 +313,7 @@ Consider simpler approaches when:
 
 **Quick Rule:** A/B/N = testing 3-4 different headlines. Multivariate = testing headline + image + button together to see if they work better in combination.
 
-**Bottom Line:** Start with simple A/B tests. If you need to test multiple options, use A/B/N, which literally just means there are variants. Save multivariate tests for when you really need to understand interactions. Don't overthink the terminology - focus on what you're trying to learn.
+**Bottom Line:** Start with simple A/B tests. If you need to test multiple options, use A/B/N, which literally just means there are variants. Save multivariate tests for when you really need to understand interactions.
 
 ## Experiment checklist
 
@@ -434,7 +432,7 @@ MDE is the smallest improvement you can reliably detect with your experiment. It
 - **Larger MDE** (e.g., 10%): You can detect bigger changes with fewer users
 - **Why it matters**: If your MDE is 10% but your actual change is only 2%, you might miss it even if it's real. You need to plan your experiment to detect the size of change you care about.
 
-**Example:** You want to detect a 5% improvement in sign-ups. Your MDE calculator says you need 10,000 users per group. If you only have 1,000 users, you can't reliably detect a 5% change - you'd need a bigger change (like 15%) to see it.
+**Example:** You want to detect a 5% improvement in sign-ups. Your MDE calculator says you need 10,000 users per group. If you only have 1,000 users, you can't reliably detect a 5% change - you'd need either a larger sample size or to accept that you can only detect bigger changes.
 
 **Planning Your Experiment:**
 1. Decide what size change matters to you (your MDE)
@@ -456,11 +454,11 @@ Statistical significance tells you an effect exists, but effect size tells you i
 - **Medium Effect:** Meaningful improvement worth implementing (e.g., 5% improvement that's easy to maintain)
 - **Large Effect:** Significant improvement, high priority to implement (e.g., 20% improvement that transforms the experience)
 
-**The Bottom Line:** Results are significant when you have enough evidence (low p-value, good sample size, full duration) AND the change is big enough for you to actually detect (MDE) AND the effect size is meaningful for your goals. Use a sample size calculator that includes MDE to plan your experiment properly.
+**The Bottom Line:** Results are significant when you have enough evidence (low p-value, good sample size, full duration) AND the change is big enough for you to actually detect (MDE) AND the effect size is meaningful for your product.
 
 ### Experiment Design Framework
 
-Use this framework to design experiments that deliver clear, actionable results. Each step should align with SMART goals (Specific, Measurable, Achievable, Relevant, Time-bound) - see [SMART Goals Framework](../../product-docs/metrics-success-criteria.md#smart-goals-framework) for details.
+Use this framework to design experiments that deliver clear, actionable results. Each step should align with SMART goals (Specific, Measurable, Achievable, Relevant, Time-bound) - see [SMART Goals Framework](../product-docs/metrics-success-criteria.md) for more on defining success criteria.
 
 1. **Question**: What are we trying to learn? (SMART: Specific, Relevant)
 2. **Hypothesis**: What do we think will happen? (SMART: Specific, Achievable)
@@ -482,4 +480,4 @@ Use this framework to design experiments that deliver clear, actionable results.
 
 - [Analytics Strategy](analytics-strategy.md) - Planning what to measure and why
 - [Data Analysis & Interpretation](data-analysis-interpretation.md) - Analyzing experiment results
-- [Metrics & Success Criteria](../../product-docs/metrics-success-criteria.md) - Defining success metrics for experiments
+- [Metrics & Success Criteria](../product-docs/metrics-success-criteria.md) - Defining success metrics for experiments
