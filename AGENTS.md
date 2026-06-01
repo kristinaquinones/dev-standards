@@ -4,7 +4,7 @@ This document outlines the contributing process and standards for this documenta
 
 ## Repository purpose
 
-This repository contains project-agnostic development standards organized as Markdown documentation across multiple discipline-specific directories (`dev-docs/`, `product-docs/`, `gtm-mktg-docs/`, `design-docs/`, `measurement-docs/`), each with its own `README.md` serving as the index.
+This repository contains project-agnostic development standards organized as Markdown documentation across multiple discipline-specific directories (`dev-docs/`, `product-docs/`, `gtm-mktg-docs/`, `design-docs/`, `measurement-docs/`).
 
 ## Contributing process
 
@@ -19,6 +19,7 @@ This repository contains project-agnostic development standards organized as Mar
    - Determine which file(s) need updates
    - Identify if new files are needed
    - Consider impact on related files and links
+   - Determine whether the change should be recorded in `CHANGELOG.md`
 
 3. **Create a branch**
    - Use descriptive branch name: `feature/add-new-standard`, `fix/typo-in-security`, `chore/update-links`
@@ -32,6 +33,7 @@ This repository contains project-agnostic development standards organized as Mar
 3. Add entry to the section's `README.md` index
 4. Link to related standards where appropriate
 5. Verify all links work
+6. Update `CHANGELOG.md` if the addition materially changes repository content, structure, or contributor workflow
 
 **For Updates:**
 1. Edit the relevant file(s) in the appropriate `*-docs/` directory
@@ -39,11 +41,13 @@ This repository contains project-agnostic development standards organized as Mar
 3. Update links if structure changes
 4. Update index if adding/removing files
 5. Update `.cursorrules`, `CLAUDE.md`, and `AGENTS.md` if standards change
+6. Update `CHANGELOG.md` when the change is significant enough to matter to future contributors or users of the repository
 
 **For Fixes:**
 1. Fix the issue (typo, broken link, formatting)
 2. Verify related content is still accurate
 3. Check for similar issues in other files
+4. Update `CHANGELOG.md` only if the fix is notable beyond a minor editorial correction
 
 ### Documentation Review Checklist
 
@@ -83,6 +87,12 @@ Before submitting a PR, verify:
 - [ ] Index file is updated if needed (in the appropriate `*-docs/` directory)
 - [ ] Related files are updated if standards change (across all standards directories)
 
+**Changelog:**
+- [ ] `CHANGELOG.md` reviewed for impact
+- [ ] Notable additions, removals, restructuring, or contributor workflow changes are recorded under `Unreleased`
+- [ ] Minor editorial-only updates are excluded unless they materially affect repository usage
+- [ ] Release sections remain dated and stable; new work goes under `Unreleased`
+
 **Git:**
 - [ ] Commit message follows Conventional Commits format
 - [ ] Branch name is descriptive
@@ -104,6 +114,7 @@ Before submitting a PR, verify:
    - [ ] Index updated (if structure changed)
    - [ ] Related files updated (if standards changed)
    - [ ] Spelling/grammar checked
+   - [ ] `CHANGELOG.md` updated if needed
 
 3. **Scope Check**
    - One topic per PR
@@ -119,6 +130,7 @@ Before submitting a PR, verify:
 - [ ] All links work correctly
 - [ ] Structure is consistent
 - [ ] Related files are updated
+- [ ] `CHANGELOG.md` reflects notable changes when applicable
 - [ ] Commit messages are clear
 - [ ] PR description is complete
 
@@ -130,6 +142,7 @@ Before submitting a PR, verify:
 - Missing cross-references between standards directories
 - DRY conflicts (duplicate content across files)
 - Missing index updates
+- Missing changelog updates for notable repository changes
 - Unclear or incomplete descriptions
 
 ### Keeping Files in Sync
@@ -145,6 +158,8 @@ When updating standards that affect the trio:
 - [ ] `CLAUDE.md` updated with detailed explanation
 - [ ] `AGENTS.md` updated with process/checklist
 - [ ] All three files reviewed for consistency
+- [ ] `README.md` updated if contributor-facing repository guidance changed
+- [ ] `CHANGELOG.md` updated if changelog policy or contributor workflow changed materially
 
 **When to Update the Trio:**
 - Adding new documentation standards
@@ -152,6 +167,7 @@ When updating standards that affect the trio:
 - Updating git workflow
 - Modifying review process
 - Changing file organization
+- Changing changelog management expectations
 
 ### Version History
 
@@ -163,7 +179,16 @@ When updating standards that affect the trio:
 **Format:**
 - Follow [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) format
 - Group changes under `Added`, `Changed`, `Removed`, `Fixed` headings
-- Update `CHANGELOG.md` when making significant changes
+- Keep upcoming work in `## [Unreleased]`
+- Promote `Unreleased` entries into a dated release section when preparing a release
+- Add release links at the bottom for tagged versions when applicable
+
+**When to Update `CHANGELOG.md`:**
+- Additions of new standards, templates, directories, or contributor-facing files
+- Significant updates to existing standards that affect repository usage
+- Structural reorganizations, file moves, consolidations, or removals
+- Changes to contributor workflow, review process, or repository-wide tooling/configuration
+- Do **not** add minor typo fixes or small editorial tweaks unless they materially change guidance
 
 ### File Organization Standards
 
@@ -180,7 +205,7 @@ dev-standards/
 │   └── README.md                # Development standards index
 ├── product-docs/                # Product management standards
 │   └── README.md                # Product standards index
-├── gtm-mktg-docs/              # GTM & Marketing standards
+├── gtm-mktg-docs/               # GTM & Marketing standards
 │   └── README.md                # GTM & Marketing standards index
 ├── design-docs/                 # Design standards
 │   └── README.md                # Design standards index
@@ -241,6 +266,7 @@ git commit -m "refactor: reorganize documentation structure"
 3. Add to the section's `README.md` index
 4. Link from related standards
 5. Verify all links work
+6. Add a changelog entry if the new standard changes repository scope or guidance
 
 **Fixing a Broken Link:**
 1. Find the broken link
@@ -248,6 +274,7 @@ git commit -m "refactor: reorganize documentation structure"
 3. Update the link
 4. Verify it works
 5. Check for similar issues
+6. Update `CHANGELOG.md` only if the fix is part of a broader notable correction
 
 **Updating Related Content:**
 1. Identify all affected files
@@ -255,6 +282,7 @@ git commit -m "refactor: reorganize documentation structure"
 3. Verify links still work
 4. Update index if structure changes
 5. Update trio files if standards change
+6. Update `CHANGELOG.md` if the change is notable
 
 **Reorganizing Structure:**
 1. Plan the new structure
@@ -263,6 +291,7 @@ git commit -m "refactor: reorganize documentation structure"
 4. Update index file
 5. Verify all links work
 6. Update trio files if needed
+7. Record the reorganization in `CHANGELOG.md`
 
 ## Questions?
 
@@ -270,4 +299,4 @@ git commit -m "refactor: reorganize documentation structure"
 - **"How do I link to another standard?"** → Use `[text](dev-docs/file.md)` or `[text](../product-docs/file.md)` for cross-directory links
 - **"What if I break a link?"** → Fix it immediately, check for others
 - **"Should I update the trio files?"** → Yes, if standards or process change
-
+- **"Should I update the changelog?"** → Yes for notable repository, workflow, structure, or standards changes; no for minor editorial-only fixes
