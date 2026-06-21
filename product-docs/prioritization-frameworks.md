@@ -81,19 +81,19 @@ MoSCoW categorizes requirements into four priority levels, useful for scoping wo
 **Must Have (M):**
 - Critical requirements; product fails without them
 - Non-negotiable for the release
-- Typically 60% of requirements
+- DSDM guidance treats this as a cap, not a target: aim for Must Haves to be no more than about 60% of the release effort, leaving contingency in the other categories
 
 **Should Have (S):**
 - Important but not critical
 - Significant value if included
 - Can be deferred if necessary
-- Typically 20% of requirements
+- Part of the contingency buffer; helps absorb risk if estimates slip
 
 **Could Have (C):**
 - Nice to have; lower priority
 - Included if time/resources allow
 - Can be moved to future releases
-- Typically 20% of requirements
+- The most expendable contingency, dropped first when time or resources run short
 
 **Won't Have (W):**
 - Explicitly out of scope for this release
@@ -104,7 +104,7 @@ MoSCoW categorizes requirements into four priority levels, useful for scoping wo
 
 1. **List Requirements**: All potential requirements for the release
 2. **Categorize**: Assign M, S, C, or W to each
-3. **Validate Distribution**: Ensure realistic split (typically 60/20/20)
+3. **Validate Distribution**: Check the effort balance. Keep Must Haves to roughly 60% of release effort or less, and hold meaningful contingency in Should Haves and Could Haves (Won't Haves are out of scope and excluded from the split)
 4. **Negotiate**: If too many Must Haves, re-evaluate or adjust scope
 5. **Communicate**: Clearly document what's in each category
 

@@ -17,13 +17,13 @@
 
 ```bash
 # Find known vulnerabilities
-<audit-command>              # e.g., npm audit, pip-audit, cargo audit, go list -m all
+<audit-command>              # e.g., npm audit, pip-audit, cargo audit, govulncheck ./...
 
 # Auto-fix where possible
 <audit-fix-command>          # e.g., npm audit fix, pip-audit --fix
 
 # Update to latest versions
-<update-command>             # e.g., npm update, pip install -U, cargo update
+<update-command>             # e.g., npm update, pip install -U <package>, cargo update
 
 # Check what's outdated
 <outdated-command>           # e.g., npm outdated, pip list --outdated, cargo outdated

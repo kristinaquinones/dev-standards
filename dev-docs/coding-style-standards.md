@@ -33,7 +33,11 @@ Where applicable, use type systems to catch errors early:
 ```typescript
 // ✅ Clear types, explicit return
 export function parseUserInput(input: string): { name: string; email: string } {
-  const [name, email] = input.split('|');
+  const parts = input.split('|');
+  if (parts.length !== 2) {
+    throw new Error('invalid input format');
+  }
+  const [name, email] = parts;
   return { name, email };
 }
 
@@ -48,7 +52,10 @@ export function parse(x: any): any {
 ```python
 # ✅ Clear types, explicit return
 def parse_user_input(input: str) -> dict[str, str]:
-    name, email = input.split('|')
+    parts = input.split('|')
+    if len(parts) != 2:
+        raise ValueError('invalid input format')
+    name, email = parts
     return {'name': name, 'email': email}
 
 # ❌ No types, unclear intent

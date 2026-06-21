@@ -106,6 +106,17 @@ And I can clear the filter to see all tasks again
 
 Use this format when stories have multiple flows or conditional behavior.
 
+## What makes a good story
+
+The INVEST criteria offer a quick checklist for evaluating whether a user story is well-formed:
+
+- **Independent**: Can be developed and delivered on its own, without depending on other stories
+- **Negotiable**: Captures the intent, leaving room to discuss the details rather than fixing an exact implementation
+- **Valuable**: Delivers clear value to a user or to the product
+- **Estimable**: Is understood well enough that the team can size it, commonly through relative estimation with story points
+- **Small**: Is small enough to complete within a single sprint
+- **Testable**: Has acceptance criteria that let you verify when it is done
+
 ## Story sizing and splitting
 
 ### Keep stories small

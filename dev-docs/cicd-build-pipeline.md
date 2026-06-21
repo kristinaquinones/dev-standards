@@ -34,12 +34,12 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       
       # Setup environment (adapt to your language/stack)
-      # - uses: actions/setup-node@v3    # for Node.js
-      # - uses: actions/setup-python@v3  # for Python
-      # - uses: actions/setup-go@v3      # for Go
+      # - uses: actions/setup-node@v4    # for Node.js
+      # - uses: actions/setup-python@v4  # for Python
+      # - uses: actions/setup-go@v4      # for Go
 
       - name: Install dependencies
         run: <install-command>
@@ -51,7 +51,7 @@ jobs:
         run: <typecheck-command>
 
       - name: Tests
-        run: <test-command> --coverage
+        run: <test-command>   # include coverage flag per tool: jest --coverage, pytest --cov, go test -cover
 
       - name: Build
         run: <build-command>
