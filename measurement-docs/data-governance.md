@@ -10,26 +10,42 @@ Data governance ensures that data is collected, stored, and used responsibly, et
 
 **GDPR (General Data Protection Regulation) - EU**
 
-**Key Principles:**
-- **Consent**: Users must explicitly consent to data collection
+GDPR separates two different things: the principles that govern how you handle data, and the rights that individuals (data subjects) have.
+
+**Principles (how you must handle data):**
+- **Lawfulness, fairness, and transparency**: Process data lawfully and be open about it
 - **Purpose Limitation**: Only collect data for stated purposes
-- **Data Minimization**: Collect only what's necessary
+- **Data Minimisation**: Collect only what's necessary
+- **Accuracy**: Keep personal data accurate and up to date
+- **Storage Limitation**: Keep data only as long as necessary for its purpose
+- **Integrity and Confidentiality**: Keep data secure
+- **Accountability**: Be able to demonstrate compliance
+
+**Lawful basis:**
+- You need a lawful basis to process personal data. Consent is only ONE of six lawful bases (consent, contract, legal obligation, vital interests, public task, legitimate interests).
+- Where consent IS your basis, it must be freely given, specific, informed, and unambiguous (a clear opt-in, not pre-checked boxes), and easy to withdraw.
+
+**Data subject rights (what individuals can ask of you):**
 - **Right to Access**: Users can request their data
-- **Right to Deletion**: Users can request data deletion
-- **Data Portability**: Users can export their data
+- **Right to Rectification**: Users can request correction of inaccurate data
+- **Right to Erasure (Deletion)**: Users can request data deletion
+- **Right to Data Portability**: Users can export their data
+- **Right to Object/Restrict**: Users can object to or restrict certain processing
 
 **What It Means for You:**
-- Get clear consent before collecting data
+- Identify a lawful basis for each kind of processing, and get clear consent where consent is the basis you rely on
 - Document what data you collect and why
-- Provide ways for users to access and delete their data
-- Only collect data you actually need
+- Provide ways for users to access, correct, and delete their data
+- Only collect data you actually need, and keep it only as long as necessary
 
 **CCPA (California Consumer Privacy Act) - California**
 
-**Key Principles:**
+**Key Rights (as amended by CPRA, effective 2023):**
 - **Right to Know**: Users can request what data is collected
 - **Right to Delete**: Users can request data deletion
-- **Right to Opt-Out**: Users can opt out of data sales
+- **Right to Correct**: Users can request correction of inaccurate personal information
+- **Right to Opt-Out**: Users can opt out of the sale or sharing of their personal information
+- **Right to Limit Use of Sensitive Personal Information**: Users can limit how their sensitive personal information is used and disclosed
 - **Non-Discrimination**: Can't discriminate against users who exercise rights
 
 **What It Means for You:**
@@ -137,10 +153,16 @@ Data governance ensures that data is collected, stored, and used responsibly, et
 - **Developers**: Can implement tracking code
 
 **3. Data Sensitivity**
-- **Public Data**: Aggregated metrics, anonymized
+- **Public Data**: Aggregated metrics, truly anonymized data (see the note below; pseudonymized data does not belong here)
 - **Internal Data**: User behavior, product usage
 - **Sensitive Data**: PII, financial information
 - **Restricted Data**: Personal details, private information
+
+**Anonymized vs. pseudonymized (this distinction matters legally):**
+- **PII (personally identifiable information)**: personal data that identifies an individual (for example, name, email, device ID, or anything that can be tied back to a specific person).
+- **Anonymized data**: irreversibly de-identified so no one can be re-identified. Truly anonymized data falls outside GDPR's scope.
+- **Pseudonymized data**: still re-linkable to a person via a key or mapping (for example, hashed or tokenized identifiers). Under GDPR this is STILL personal data and must be protected accordingly.
+- Do not treat pseudonymized data as "public" or anonymous. Only genuinely anonymized (irreversible) data can be handled as Public Data.
 
 ### Access Management
 
@@ -177,6 +199,11 @@ Data governance ensures that data is collected, stored, and used responsibly, et
 - How long you keep it
 - How it's secured
 - Who has access
+
+**Retention (GDPR's storage-limitation principle):**
+- Keep personal data only as long as necessary for its stated purpose
+- Define retention periods for each kind of data, and enforce them
+- Delete or anonymize data when it's no longer needed
 
 **3. Data Usage**
 - How data is used

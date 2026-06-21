@@ -42,6 +42,7 @@ Each section contains detailed guidelines, examples, checklists, and best practi
 - **[product-docs/](../product-docs/)** - Product management standards
 - **[gtm-mktg-docs/](../gtm-mktg-docs/)** - GTM and marketing standards
 - **[design-docs/](../design-docs/)** - Design standards
+- **[measurement-docs/](../measurement-docs/)** - Measurement and analytics standards
 - **ARCHITECTURE-DECISIONS.md** - Major technical decisions and rationale (when created in projects)
 - **QUICK-REFERENCE.md** - Developer cheat sheet (when created in projects)
 - **progress/YYYY_MM_DD.md** - Daily/weekly progress logs (when created in projects)

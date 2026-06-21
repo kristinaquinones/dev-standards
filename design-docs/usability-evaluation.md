@@ -39,7 +39,7 @@ Usability evaluation helps you understand how well your designs work for users. 
 ### Heuristic Evaluation
 
 **What It Is:**
-A framework for evaluating designs against usability principles (heuristics). Can be done without users, but is most effective with user testing.
+A framework for evaluating designs against usability principles (heuristics). It is an expert inspection method performed by evaluators without users, and it complements (does not replace) usability testing with real users.
 
 **Heuristics:**
 1. **Visibility of System Status**: Users should know what's happening
@@ -72,7 +72,7 @@ Observing users interact with your design to complete tasks. The most effective 
 - More control over the session
 - Requires your time during testing
 
-**Unmodestated Testing:**
+**Unmoderated Testing:**
 - Users test on their own
 - You review recordings or results later
 - Less control but more scalable
@@ -156,10 +156,11 @@ Observing users interact with your design to complete tasks. The most effective 
 ### User Satisfaction
 
 **Subjective Ratings:**
-- Ask users to rate ease of use
+- Ask users to rate ease of use (for example, a 1-5 scale)
 - Measure satisfaction with design
 - Understand user preferences
 - Complement objective metrics
+- For a comparable, benchmarkable score, consider the System Usability Scale (SUS), a standardized 10-item questionnaire that produces a single usability score you can track over time and compare across products
 
 **Qualitative Feedback:**
 - What users say about the design

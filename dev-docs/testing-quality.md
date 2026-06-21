@@ -4,19 +4,19 @@
 
 **Pyramid Approach** (Many unit tests → Some integration → Few E2E):
 
-1. **Unit Tests** (60–70% of test suite)
+1. **Unit Tests** (~70% of test suite)
    - Test individual functions, modules, components
    - Isolated from external dependencies (mock APIs, databases)
    - Fast to run (<5ms per test)
    - Use appropriate testing framework for your language/ecosystem
 
-2. **Integration Tests** (20–30% of test suite)
+2. **Integration Tests** (~20% of test suite)
    - Test how modules work together
    - Use realistic test fixtures
    - May hit real databases or file systems
    - Use appropriate testing framework for your language/ecosystem
 
-3. **E2E Tests** (5–10% of test suite)
+3. **E2E Tests** (~10% of test suite)
    - Test complete user workflows
    - Run in real browser/environment (for web apps) or production-like environments
    - Slow but high confidence

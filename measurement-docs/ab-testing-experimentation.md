@@ -55,7 +55,7 @@ Identify the metrics that will indicate success:
 Randomly assign users to treatment and control groups:
 
 - **Randomization**: Ensures groups are similar on average
-- **Equal Distribution**: For solo devn and bootstrapped products, typically a 50/50 split is fine, but this can and will vary based on your hypothesis, existing baseline(s), and audience size
+- **Equal Distribution**: For solo devs and bootstrapped products, typically a 50/50 split is fine, but this can and will vary based on your hypothesis, existing baseline(s), and audience size
 - **Consistent Assignment**: Users should stay in the same group throughout the experiment
 
 ### 4. Sample Size Planning
@@ -160,18 +160,18 @@ Observed data showed retention increased, but incrementality revealed the featur
 
 Think of it like this: You test a new button color and see more clicks. Is that because the color is better, or just random luck? Statistical significance helps you decide.
 
-- **P-value**: The chance that your result happened by luck alone (like seeing more clicks just by random chance, not because the change actually worked)
-- **Significance Threshold**: Usually 5% (0.05) - if the chance is less than 5%, we say it's "significant" (probably not luck)
-- **What It Means**: A low p-value means "this probably wasn't just luck"
-- **Remember**: Significance tells you something happened, but not whether it matters much
+- **P-value**: If the change truly did nothing, how often would we see a result at least this big? That's the p-value. It is NOT the chance your result is "just luck," and it is NOT the chance the change worked.
+- **Significance Threshold**: Usually 5% (0.05) - if a result at least this big would happen less than 5% of the time when the change does nothing, we say it's "significant"
+- **What It Means**: A low p-value means a result this large would rarely happen by chance if the change had no effect, so the effect is likely real
+- **Remember**: Significance tells you something probably happened, but not whether it matters much
 
 **Confidence Intervals:**
 
 Instead of saying "the effect is exactly 5%," we say "the effect is probably between 3% and 7%."
 
-- **Range of Values**: The likely range where the true effect actually is
-- **Example**: "5% increase, with 95% confidence it's between 3% and 7%"
-- **What It Means**: We're pretty sure (95% sure) the real effect is somewhere in that range
+- **Range of Values**: A plausible range for the true effect, rather than a single point
+- **Example**: "5% increase, with a 95% confidence interval of 3% to 7%"
+- **What It Means**: A 95% confidence interval comes from a method that captures the true effect about 95% of the time if you repeated the experiment many times. It gives a plausible range for the effect rather than a single point. (Note: this is about the method's long-run track record, so it does not mean any single interval has a 95% probability of containing the true value.)
 - **Wider Range**: Less certainty - happens when your data is all over the place (e.g., in your test group, some users clicked 10 times while others clicked 0 times - that's messy, hard-to-predict data)
 - **Narrow Range**: More certainty - happens when your data is consistent and predictable (e.g., in your test group, most users clicked 4-6 times with very few outliers - that's clean, reliable data)
 
@@ -196,7 +196,7 @@ You don't need to calculate these by hand! Use online calculators to:
   - [VWO A/B Test Significance Calculator](https://vwo.com/ab-split-test-significance-calculator/) - Significance testing
 
 **Quick Rule of Thumb:**
-- If your p-value is below 0.05 (5%), your result is probably real, not luck
+- If your p-value is below 0.05 (5%), a result at least this big would rarely happen if the change had no effect, so the effect is likely real (note: p < 0.05 does not mean "95% likely to be real")
 - If your confidence interval doesn't include zero, you likely have a real effect
 - When in doubt, use a calculator or ask someone with statistical expertise
 
@@ -205,7 +205,7 @@ You don't need to calculate these by hand! Use online calculators to:
 **Pitfall 1: Stopping Too Early**
 
 - **Problem**: Ending an experiment as soon as you see a positive result
-- **Why It's Wrong**: Early results can be due to chance (regression to the mean)
+- **Why It's Wrong**: Two things make early results unreliable. First, small samples are noisy (high variance), so early numbers swing around a lot. Second, repeatedly checking and stopping the moment you see significance (peeking, also called optional stopping) inflates the false-positive rate, because you give yourself many chances to catch a random high point.
      - **Example**: After 3 days, your test shows a 10% improvement and looks "significant." You stop and launch. But by day 7 (your planned end date), that improvement has shrunk to 2% and is no longer significant.
      - Early results often look better (or worse) than they really are because you haven't reached enough participants yet, or you're measuring before users have had enough time to complete the action you're tracking.
 - **Solution**: Wait for statistical significance and run for planned duration
@@ -215,6 +215,7 @@ You don't need to calculate these by hand! Use online calculators to:
 - **Problem**: Checking results multiple times and stopping when you like what you see
 - **Why It's Wrong**: Increases false positive rate (multiple comparisons problem)
      - A well-designed experiment with a clear plan from the start doesn't require multiple checks. The experiment design already accounts for the sample size and duration needed. Trust the process.
+     - If you genuinely need to monitor continuously, there are legitimate methods that account for repeated looks: sequential testing, always-valid p-values, and alpha-spending (group sequential) methods. Use one of these rather than just eyeballing the dashboard and stopping when it looks good.
 - **Solution**: Decide on analysis plan upfront, stick to it 
 
 **Pitfall 3: Ignoring Secondary Metrics**
@@ -241,7 +242,7 @@ You don't need to calculate these by hand! Use online calculators to:
 
 - **Problem**: Testing many things and finding "significant" results by chance
 - **Why It's Wrong**: The more tests you run, the more likely false positives.
-     - If you test 20 different button colors, even if none actually work, you'll likely find 1 "significant" result just by chance (5% of 20 = 1 false positive).
+     - If you test 20 different button colors, even if none actually work, you'd expect about 1 false positive on average (0.05 x 20 = 1 expected false positive). That's an average, not a guarantee. The chance of getting at least one false positive across 20 independent tests is roughly 64% (1 - 0.95^20), so more often than not you'll see at least one "significant" result purely by chance.
      - **Another Example**: You test 10 different headlines for your landing page simultaneously. One shows a 15% improvement with p < 0.05, so you launch it. But you've essentially run 10 tests, so that result may just be random chance.
 - **Solution**: The simplest approach is to test one thing at a time. If you must test multiple things, be more strict about what counts as "significant" (e.g., require stronger evidence when testing many variants).
 
@@ -419,7 +420,7 @@ Consider simpler approaches when:
 
 Think of it like this: You need enough evidence to be confident your change actually worked, not just got lucky.
 
-- **P-value is low** (usually below 0.05): The chance this happened by luck is small - probably not random
+- **P-value is low** (usually below 0.05): If the change had no effect, a result this large would rarely happen by chance, so the effect is likely real (a low p-value is not the probability that your result is "just luck")
 - **Confidence interval doesn't include zero**: The effect is likely real (not zero), even if you're not sure exactly how big
 - **You had enough users**: Too few users = unreliable results (like asking 3 people and thinking you know what everyone thinks)
 - **You ran it long enough**: Let the experiment finish - early results can be misleading

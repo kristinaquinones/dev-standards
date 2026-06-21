@@ -148,10 +148,14 @@ Measurement and analytics standards and best practices:
 dev-standards/
 ├── README.md                    # This file
 ├── CHANGELOG.md                 # Version history and notable repository changes
+├── CONTRIBUTING.md              # Contributing process
 ├── LICENSE                      # GPL v3 license
-├── .cursorrules                 # AI assistant rules
-├── CLAUDE.md                    # Contributor guidelines
-├── AGENTS.md                    # Contributing process
+├── CLAUDE.md                    # Source of truth for documentation standards
+├── AGENTS.md                    # Stub pointing to CLAUDE.md
+├── .cursorrules                 # Stub pointing to CLAUDE.md
+├── .markdownlint.json           # Markdown lint configuration
+├── .markdown-link-check.json    # Link check configuration
+├── .github/                     # Repository automation and funding config
 │
 ├── philosophy-principles.md     # Core philosophy and principles
 │
@@ -204,22 +208,31 @@ dev-standards/
 │       └── content-brief-template.md
 │
 ├── design-docs/                 # Design standards
-│   └── README.md                # Design standards index
+│   ├── README.md                # Design standards index
+│   ├── information-architecture.md
+│   ├── interaction-design.md
+│   ├── usability-evaluation.md
+│   └── templates/               # Design templates
+│       ├── README.md
+│       ├── design-system-documentation-template.md
+│       ├── design-handoff-template.md
+│       └── usability-testing-plan-template.md
 │
 └── measurement-docs/            # Measurement & Analytics standards
-    └── README.md                # Measurement standards index
+    ├── README.md                # Measurement standards index
+    ├── analytics-strategy.md
+    ├── ab-testing-experimentation.md
+    ├── data-analysis-interpretation.md
+    └── data-governance.md
 ```
 
 ---
 
 ## Contributing
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for the complete contributing process, guidelines, and frequently asked questions.
+See [CONTRIBUTING.md](CONTRIBUTING.md) for the complete contributing process and frequently asked questions.
 
-For AI/contributor workflow guidance, also see:
-- [AGENTS.md](AGENTS.md)
-- [CLAUDE.md](CLAUDE.md)
-- [.cursorrules](.cursorrules)
+The documentation standards themselves (formatting, style, content rules, changelog policy) live in [CLAUDE.md](CLAUDE.md), the single source of truth. [AGENTS.md](AGENTS.md) and [.cursorrules](.cursorrules) are short stubs that point to it.
 
 ## Version history
 

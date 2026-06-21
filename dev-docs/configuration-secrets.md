@@ -4,7 +4,7 @@
 
 1. **Public Variables** (safe to expose, checked in)
    - Framework config: `NEXT_PUBLIC_API_URL`
-   - Feature flags: `FEATURE_EXPERIMENTAL_SEARCH`
+   - Feature flags: `NEXT_PUBLIC_FEATURE_EXPERIMENTAL_SEARCH`
    - App metadata: `NEXT_PUBLIC_VERSION`
 
 2. **Private Variables** (sensitive, NOT checked in)

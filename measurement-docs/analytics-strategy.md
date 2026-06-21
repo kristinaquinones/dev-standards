@@ -111,8 +111,8 @@ Before collecting data, identify the questions you need to answer:
 **Outcome Metrics:**
 - Revenue and revenue per user
 - Conversion rates
-- Customer acquisition cost (CAC)
-- Lifetime value (LTV)
+- Customer acquisition cost (CAC): total acquisition spend divided by the number of new customers acquired in a period
+- Lifetime value (LTV): the total revenue or value expected from a customer over their relationship with you (commonly average revenue per customer x gross margin x average lifetime, or ARPU divided by churn rate)
 
 **Metric Definition Best Practices:**
 - **Clear Definitions**: Document exactly what each metric measures
@@ -181,7 +181,7 @@ Before collecting data, identify the questions you need to answer:
 **Privacy Considerations:**
 - Minimize data collection to what's necessary
 - Obtain proper consent where required
-- Anonymize or pseudonymize data when possible
+- Anonymize or pseudonymize data when possible (these are not the same: pseudonymized data is still personal data, while truly anonymized data is not, see [Data Governance](data-governance.md) for the distinction)
 - Follow privacy regulations (GDPR, CCPA, etc.)
 
 ## Metrics definition

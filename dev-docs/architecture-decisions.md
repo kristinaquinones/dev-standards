@@ -7,14 +7,14 @@ Major decisions (tech stack, database, versioning strategy, performance targets)
 - **Bad refactors** (re-implementing features that were chosen for a reason)
 - **Onboarding confusion** (new team members understand the "why")
 
-## Architecture decision log (ADL) pattern
+## Architecture Decision Record (ADR) pattern
 
 Create `docs/ARCHITECTURE-DECISIONS.md`:
 
 ```markdown
 # Architecture Decisions
 
-## ADL-001: Choose Static Typing for Type Safety
+## ADR-001: Choose Static Typing for Type Safety
 
 **Date:** 2025-01-15
 **Status:** Accepted
@@ -38,15 +38,15 @@ Use a statically typed language with strict type checking enabled.
 - ❌ May require build step
 
 ### Related Decisions
-- ADL-002: Linting and formatting standards
-- ADL-003: Testing framework selection
+- ADR-002: Linting and formatting standards
+- ADR-003: Testing framework selection
 
 ### Links
 - Language documentation
 - Type system guide
 ```
 
-**For each ADL entry:**
+**For each ADR entry:**
 - Clear decision statement
 - Context and alternatives
 - Consequences (pros/cons)

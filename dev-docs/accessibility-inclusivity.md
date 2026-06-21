@@ -6,7 +6,7 @@
 
 ## Checklist
 
-- [ ] **Color Contrast:** ≥4.5:1 for text, ≥3:1 for UI components
+- [ ] **Color Contrast:** ≥4.5:1 for normal text, ≥3:1 for large text (≥18pt, or ≥14pt bold), ≥3:1 for UI components and graphics
 - [ ] **Keyboard Navigation:** All interactive elements accessible via Tab, Enter, Escape
 - [ ] **ARIA Labels:** Buttons, form fields, landmarks have descriptive labels
 - [ ] **Focus Indicator:** Clear focus visible on all interactive elements

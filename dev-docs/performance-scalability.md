@@ -5,10 +5,10 @@
 | Metric | Target | Tools |
 |--------|--------|-------|
 | Lighthouse Performance | ≥85 | Lighthouse CI |
-| Lighthouse Accessibility | ≥90 | Lighthouse CI |
+| Lighthouse Accessibility | ≥95 | Lighthouse CI |
 | First Contentful Paint (FCP) | <2s | Web Vitals |
 | Cumulative Layout Shift (CLS) | <0.1 | Web Vitals |
-| Time to Interactive (TTI) | <3.5s | Web Vitals |
+| Interaction to Next Paint (INP) | <200ms | Web Vitals |
 | Bundle Size | <300KB (gzipped) | bundlesize/size-limit |
 | API Response Time | <200ms (p95) | APM tools |
 | Database Query Time | <100ms (p95) | Database profiling |

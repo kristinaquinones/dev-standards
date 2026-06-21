@@ -7,6 +7,23 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+- INVEST criteria for evaluating user stories in `product-docs/user-stories.md`
+- System Usability Scale (SUS) reference in `design-docs/usability-evaluation.md`
+- CAC and LTV definitions in `measurement-docs/analytics-strategy.md`
+
+### Changed
+- Made `CLAUDE.md` the single source of truth for documentation standards, moved the full contributing process into `CONTRIBUTING.md`, and reduced `AGENTS.md` and `.cursorrules` to short stubs that point to `CLAUDE.md`
+- Updated `README.md` repository structure to list all discipline files and reflect the new governance file roles
+- Reconciled the Lighthouse accessibility target to ≥95 across `dev-docs/`
+- Replaced the deprecated Time to Interactive (TTI) target with Interaction to Next Paint (INP) in `dev-docs/performance-scalability.md`
+
+### Fixed
+- Corrected statistical definitions in `measurement-docs/ab-testing-experimentation.md` (p-value, confidence interval, multiple comparisons, and early-stopping/peeking guidance)
+- Corrected privacy and compliance guidance in `measurement-docs/data-governance.md` (GDPR lawful bases, Article 5 principles vs data subject rights, CPRA sale-or-sharing opt-out, anonymization vs pseudonymization, and data retention)
+- Corrected technical inaccuracies across `dev-docs/` (security audit and update commands, testing pyramid proportions, coding-style validation examples, CI coverage flags and action versions, ADR terminology, Next.js public variable classification, Conventional Commits type list, and color-contrast thresholds)
+- Corrected MoSCoW prioritization guidance in `product-docs/prioritization-frameworks.md` and heuristic-evaluation framing in `design-docs/usability-evaluation.md`
+
 ## [1.1.0] - 2026-06-01
 
 ### Added

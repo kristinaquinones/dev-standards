@@ -1,6 +1,8 @@
 # Contributor Guidelines for dev-standards
 
-This document provides detailed guidelines for contributing to this documentation repository, especially when working with AI assistants like Claude.
+This document is the single source of truth for the documentation standards in this repository (formatting, file organization, content, style, and changelog policy), especially when working with AI assistants like Claude.
+
+For the contributing process (branching, commit messages, pull requests, and review), see [CONTRIBUTING.md](CONTRIBUTING.md). `AGENTS.md` and `.cursorrules` are short stubs that point back to this file, so the standards below live here only.
 
 ## Repository overview
 
@@ -71,9 +73,10 @@ dev-standards/
 ├── README.md                    # Repository overview
 ├── CHANGELOG.md                 # Version history
 ├── LICENSE                      # License file
-├── .cursorrules                 # AI assistant rules
-├── CLAUDE.md                    # This file
-├── AGENTS.md                    # Contributing process
+├── CONTRIBUTING.md              # Contributing process
+├── CLAUDE.md                    # This file (source of truth for standards)
+├── AGENTS.md                    # Stub pointing to CLAUDE.md
+├── .cursorrules                 # Stub pointing to CLAUDE.md
 ├── dev-docs/                    # Development standards
 │   └── README.md                # Development standards index
 ├── product-docs/                # Product standards
@@ -129,26 +132,7 @@ Each standard file should:
 
 ### Git workflow
 
-**Commit messages:**
-Use Conventional Commits format:
-- `docs: add new section on code organization`
-- `fix: correct typo in security.md`
-- `feat: add new accessibility standards`
-- `refactor: reorganize documentation structure`
-
-**Branch strategy:**
-- `feature/description` for new content or major updates
-- `fix/description` for corrections
-- `chore/description` for maintenance tasks
-- Always branch from `main`
-
-**Pull requests:**
-- One topic per PR (keep scope focused)
-- Include clear description of changes
-- Verify all links work
-- Update index file if adding/removing files
-- Update related files if changing standards
-- Update `CHANGELOG.md` when the changes are notable to contributors or users of the repository
+The commit message format, branch strategy, and pull request process live in [CONTRIBUTING.md](CONTRIBUTING.md). Follow that document for anything related to the contributing process; this file covers the documentation standards only.
 
 ### Working with AI assistants
 
@@ -166,7 +150,7 @@ Use Conventional Commits format:
 - Update related files when making changes
 - Verify links before suggesting changes
 - Review whether `CHANGELOG.md` should be updated for notable changes
-- Keep `CHANGELOG.md`, `README.md`, `.cursorrules`, `CLAUDE.md`, and `AGENTS.md` aligned when contributor workflow changes
+- Update `CLAUDE.md` when the documentation standards themselves change (it is the source of truth); update `CONTRIBUTING.md` for process changes, and `README.md` for contributor-facing repository guidance. `AGENTS.md` and `.cursorrules` are stubs and need no content updates.
 
 **AI should NOT:**
 - Create new files without updating the index
@@ -207,36 +191,24 @@ Before committing:
 
 ### Documentation review checklist
 
-Before submitting a PR:
-- [ ] Spelling and grammar checked
-- [ ] All links verified (internal and external)
-- [ ] Formatting consistent with existing files
-- [ ] File structure follows conventions
-- [ ] Related files updated (especially index files and trio files)
-- [ ] Cross-references reviewed: All related topics linked across all standards directories
-- [ ] DRY conflicts checked: No duplicate content, conflicts resolved
-- [ ] `CHANGELOG.md` reviewed for impact
-- [ ] Notable repository, standards, structure, tooling, or workflow changes added under `Unreleased`
-- [ ] Minor editorial-only changes excluded from the changelog unless they materially change guidance
-- [ ] Commit message follows Conventional Commits format
-- [ ] PR description is clear and complete
+The full pre-PR review checklist lives in [CONTRIBUTING.md](CONTRIBUTING.md#documentation-review-checklist). Use it before submitting any change.
 
-### Keeping files in sync
+### Governance files and source of truth
 
-**The trio:**
-- `.cursorrules` - Brief rules for AI assistants
-- `CLAUDE.md` - This file (detailed guidelines)
-- `AGENTS.md` - Contributing process
+This repository keeps standards and process in one place each, so there is nothing to keep in content sync:
+
+- **`CLAUDE.md`** (this file) is the single source of truth for the documentation standards.
+- **`CONTRIBUTING.md`** owns the contributing process (branching, commits, pull requests, review).
+- **`AGENTS.md`** and **`.cursorrules`** are short stubs that point to `CLAUDE.md`. They intentionally hold no standards of their own, so they do not need updating when standards change. Update them only if the pointer itself changes.
 
 **When updating standards:**
 1. Update the relevant file in the appropriate `*-docs/` directory
 2. Update the relevant `*-docs/README.md` index if structure changes
 3. Review for cross-referencing opportunities across all standards directories
 4. Check for DRY conflicts and resolve or consolidate as needed
-5. Update `.cursorrules`, `CLAUDE.md`, and `AGENTS.md` if standards change
+5. Update `CLAUDE.md` if the standards themselves change (it is the source of truth)
 6. Update `README.md` if contributor-facing repository guidance changes
 7. Update `CHANGELOG.md` if the change is notable
-8. Keep all of these files consistent with each other
 
 ### Version history
 
